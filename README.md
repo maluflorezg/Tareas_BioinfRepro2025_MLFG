@@ -1,4 +1,3 @@
-# Mi nombre es Martha Florez
-## Soy colombiana 
-  1. Mamá
-  2. 
+# Un poco de mi ...
+## Mi nombre es Martha Florez, 
+Soy colombiana y llevo 18 años viviendo en Chile. Actualmente estudio un magister en Genética de la Universidad de Chile.
