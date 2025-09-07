@@ -18,6 +18,8 @@ Realizar los ejercicios que figuran al final del tutorial de la Sesión 1 de la 
 3. Escribe un script que baje 5 secuencias (algún loci corto, no un genoma) de una especie que te interese y señala cuántas veces existe la secuencia "TGCA" en cada una de ellas. ¿Sabes qué hace esta secuencia?
 4. La entrega se hace en uno más PDF. Pueden adjuntar scripts y archivos de output en archivos de texto plano.
 
+## El desarrollo de la Tarea_01 se encuentra en Tarea01_Florez_Martha.pdf
+
 # TAREA 2
 Realizar los ejercicios que figuran al final del tutorial de la Sesión 2 de la Unidad 2:
 
