@@ -30,8 +30,7 @@ Realizar los ejercicios que figuran al final del tutorial de la Sesión 2 de la 
 5. Las figuras deben tener sus respectivas leyendas explicativas, un número de figura y debe estar citada en el texto.
 6. Cuando envíen la tarea, no adjunten archivos. Solo indiquen el url de su repositorio.
    
-### El desarrollo de la Tarea_02 se encuentra en 
-[Tarea02_Florez_Martha.pdf] (https://github.com/maluflorezg/Tareas_BioinfRepro2025_MLFG/blob/main/Tareas_sesiones/Sesion_2/Tarea_02_Martha_Florez.md)
+### El desarrollo de la Tarea_02 se encuentra en Tarea_02_Martha_Florez.md
 
 
 # TAREA 3 
