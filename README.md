@@ -128,6 +128,5 @@ Ejercicio: Al script del ejercicio de las pruebas de Mantel, agrega el código n
 ¿Cuántas muestras hay de cada raza?
 En promedio ¿a qué altitud fueron colectadas las muestras?
 ¿Y a qué altitud máxima y mínima fueron colectadas?
-Crea una nueva df de datos sólo con las muestras de la raza Olotillo
-Crea una nueva df de datos sólo con las muestras de la raza Reventador, Jala y Ancho
+Crea una nueva df de datos sólo con las muestras de la raza OlotilloCrea una nueva df de datos sólo con las muestras de la raza Reventador, Jala y Ancho
 Escribe la matriz anterior a un archivo llamado "submat.cvs" en /meta.
