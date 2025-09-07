@@ -17,6 +17,7 @@ Realizar los ejercicios que figuran al final del tutorial de la Sesión 1 de la 
 2. Escribe un script que cree 4 directorios llamados PobA, PobB, PobC, PobD y dentro de cada uno de ellos un archivo de texto que diga "Este es un individuo de la población x" donde x debe corresponder al nombre del directorio.
 3. Escribe un script que baje 5 secuencias (algún loci corto, no un genoma) de una especie que te interese y señala cuántas veces existe la secuencia "TGCA" en cada una de ellas. ¿Sabes qué hace esta secuencia?
 4. La entrega se hace en uno más PDF. Pueden adjuntar scripts y archivos de output en archivos de texto plano.
+   
 ### El desarrollo de la Tarea_01 se encuentra en [Tarea01_Florez_Martha.pdf](https://github.com/maluflorezg/Tareas_BioinfRepro2025_MLFG/blob/main/Tareas_sesiones/Sesion_1/Tarea01_Florez_Martha.pdf)
 
 # TAREA 2
@@ -28,6 +29,7 @@ Realizar los ejercicios que figuran al final del tutorial de la Sesión 2 de la 
 4. Para los ejercicios que son de la partes sobre Markdown, mostrar capturas de pantalla tanto de el código como del resultado formateado.
 5. Las figuras deben tener sus respectivas leyendas explicativas, un número de figura y debe estar citada en el texto.
 6. Cuando envíen la tarea, no adjunten archivos. Solo indiquen el url de su repositorio.
+   
 ### El desarrollo de la Tarea_01 se encuentra en https://github.com/maluflorezg/Tareas_BioinfRepro2025_MLFG/blob/main/Tareas_sesiones/Sesion_2/Tarea_02_Martha_Florez.md
 
 # TAREA 3 
