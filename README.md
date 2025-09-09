@@ -10,7 +10,7 @@ Es una clonación de [GitHub - u-genoma/BioinfinvRepro: Curso de introducción a
    Contiene sub carpetas de las **Tareas por Sesión** que incluirá el material requerido para la realización de la tarea
 3. README.md con el detalle de lo realizado por sesion que se actualizara a medida que avanza el curso
      
-# TAREA 1
+# TAREA 1 - Introducción a la programación
 Realizar los ejercicios que figuran al final del tutorial de la Sesión 1 de la Unidad 1:
 
 1. Escribe una línea de código que cree un archivo con los nombres de las muestras de maiz enlistadas en /Unidad1/Sesion1/Prac_Uni1/Maiz/nuevos_final.fam.
@@ -37,7 +37,7 @@ ejemplonano.txt        nuevos_final.fam
 
 ### El desarrollo de la Tarea_01 se encuentra en [Tarea01_Florez_Martha.pdf](https://github.com/maluflorezg/Tareas_BioinfRepro2025_MLFG/blob/main/Tareas_sesiones/Sesion_1/Tarea01_Florez_Martha.pdf)
 
-# TAREA 2
+# TAREA 2 - Introducción a la programación
 Realizar los ejercicios que figuran al final del tutorial de la Sesión 2 de la Unidad 2:
 
 1. Realiza los ejercicios indicados en cada sección del tutorial de la Sesión 2 de la Unidad 2.
@@ -78,7 +78,7 @@ Realizar los ejercicios que figuran al final del tutorial de la Sesión 2 de la 
 ### El desarrollo de la Tarea_02 se encuentra en [Tarea_02_Martha_Florez.md](https://github.com/maluflorezg/Tareas_BioinfRepro2025_MLFG/blob/main/Tareas_sesiones/Sesion_2/Tarea_02_Martha_Florez.md)
 
 
-# TAREA 3 
+# TAREA 3 - Introducción a R con un enfoque bioinformático
 Revisar el tutorial de la Sesión 3 de la Unidad y resolver sus ejercicios: 
 1. Poner todo en un Markdown específico para esta tarea en sus repositorios.
 2. Recuerden que la página de inicio de sus repositorios debe tener un README, describiendo el repositorio, y que este debe tener links a las tareas de cada semana.
