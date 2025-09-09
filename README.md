@@ -1,16 +1,19 @@
 # Introducción a la bioinformática y la investigación reproducible para el análisis genómico
+
 [Tareas_BioinfRepro2025_MLFG](https://github.com/maluflorezg/Tareas_BioinfRepro2025_MLFG)
 Este repositorio se realiza con el fin de darle seguimiento al curso de bioinformática que me encuentro realizando dentro del magister en Genéitca.
 En el repo se cargaran las tareas asignadas cada semana
 
 Actualmente en [Tareas_BioinfRepro2025_MLFG](https://github.com/maluflorezg/Tareas_BioinfRepro2025_MLFG) se encuentra:
+
 1. Carpeta [BioinfinvRepro](https://github.com/maluflorezg/Tareas_BioinfRepro2025_MLFG/tree/main/BioinfinvRepro "BioinfinvRepro")**
-Es una clonación de [GitHub - u-genoma/BioinfinvRepro: Curso de introducción a la bioinformática e investigación reproducible](https://github.com/u-genoma/BioinfinvRepro.git). Incluye el material docente que se debe actualizar, además incluye información sobre los ejercicios/Tareas a realizar
+   Es una clonación de [GitHub - u-genoma/BioinfinvRepro: Curso de introducción a la bioinformática e investigación reproducible](https://github.com/u-genoma/BioinfinvRepro.git). Incluye el material docente que se debe actualizar, además incluye información sobre los ejercicios/Tareas a realizar
 2. Carpeta [Tareas_sesiones](https://github.com/maluflorezg/Tareas_BioinfRepro2025_MLFG/tree/main/Tareas_sesiones "Tareas_sesiones")**
    Contiene sub carpetas de las **Tareas por Sesión** que incluirá el material requerido para la realización de la tarea
 3. README.md con el detalle de lo realizado por sesion que se actualizara a medida que avanza el curso
-     
+
 # TAREA 1 - Introducción a la programación
+
 Realizar los ejercicios que figuran al final del tutorial de la Sesión 1 de la Unidad 1:
 
 1. Escribe una línea de código que cree un archivo con los nombres de las muestras de maiz enlistadas en /Unidad1/Sesion1/Prac_Uni1/Maiz/nuevos_final.fam.
@@ -21,16 +24,18 @@ Realizar los ejercicios que figuran al final del tutorial de la Sesión 1 de la 
 ## EJERCICIOS
 
 1. Enlista el contenido de `Maiz` por tamaño del archivo y has que el tamaño del archivo se lea en KB y MB (ie reducido en vez de todos los bytes).
-   
+
 2. Necesitamos crear más archivos .bed y .fam para los ejemplos de abajo. Queremos qué se llamen `ejemplo_final.bed` y `ejemplo_final.fam`. ¿Cómo hacerlo?
 
 El resultado del ejercicio anterior es:
+
 ```
 $ ls
 ejemplo_final.bed    nuevos_final.bed    nuevos_final.log
 ejemplo_final.fam    nuevos_final.bim
 ejemplonano.txt        nuevos_final.fam
 ```
+
 3. En el archivo que estamos viendo hay unas muestras de teocintles cuyos nombres empiezan con "teos". ¿En qué líneas del documento están?
 
 4. ¿Cómo concatenar tres o más archivos a la vez?
@@ -38,6 +43,7 @@ ejemplonano.txt        nuevos_final.fam
 ### El desarrollo de la Tarea_01 se encuentra en [Tarea01_Florez_Martha.pdf](https://github.com/maluflorezg/Tareas_BioinfRepro2025_MLFG/blob/main/Tareas_sesiones/Sesion_1/Tarea01_Florez_Martha.pdf)
 
 # TAREA 2 - Introducción a la programación
+
 Realizar los ejercicios que figuran al final del tutorial de la Sesión 2 de la Unidad 2:
 
 1. Realiza los ejercicios indicados en cada sección del tutorial de la Sesión 2 de la Unidad 2.
@@ -54,7 +60,7 @@ Realizar los ejercicios que figuran al final del tutorial de la Sesión 2 de la 
 2. siguiendo los pasos del tutorial anterior, genera un repositorio entro de tu cuenta de Github que se llame "Tareas_BioinfRepro2019_TusIniciales".
 
 3. Clona el repositorio de la clase y actualízalo que vez que sea necesario. **NOTAS IMPORTANTES PARA ESTE EJERCICIO:**
-
+   
    3.1 Clonalo en un lugar distinto de dónde habías bajado la carpeta del repo las clases anteriores, o cámbiale el nombre a esa carpeta vieja, o símil.
    3.2 Como mi repo tiene más de una rama, necesitarás agregar a tu `git clone` lo siguiente: `--branch master --single-branch`.
    3.3 Modica la página de esta sesion en tu copia local, inclyebdo tus datos (nombre y fecha de modificacón).
@@ -77,16 +83,20 @@ Realizar los ejercicios que figuran al final del tutorial de la Sesión 2 de la 
 
 ### El desarrollo de la Tarea_02 se encuentra en [Tarea_02_Martha_Florez.md](https://github.com/maluflorezg/Tareas_BioinfRepro2025_MLFG/blob/main/Tareas_sesiones/Sesion_2/Tarea_02_Martha_Florez.md)
 
-
 # TAREA 3 - Introducción a R con un enfoque bioinformático
+
 Revisar el tutorial de la Sesión 3 de la Unidad y resolver sus ejercicios: 
+
 1. Poner todo en un Markdown específico para esta tarea en sus repositorios.
 2. Recuerden que la página de inicio de sus repositorios debe tener un README, describiendo el repositorio, y que este debe tener links a las tareas de cada semana.
 3. Organizar el material de cada semana en su propia carpeta, tal como está organizado el repositorio del curso.
 
 ## EJERCICIOS
+
 1. Crea una variable con el logaritmo base 10 de 50 y súmalo a otra variable cuyo valor sea igual a 5.
+
 2. Suma el número 2 a todos los números entre 1 y 150.
+
 3. ¿Cuántos números son mayores a 20 en el vector -13432:234?
 
 4. Carga en R el archivo `PracUni1Ses3/maices/meta/maizteocintle_SNP50k_meta_extended.txt` y ponlo en un objeto de R llamado meta_maiz.
@@ -120,13 +130,28 @@ Ejercicio: Al script del ejercicio de las pruebas de Mantel, agrega el código n
 
 (averigua cada punto con comandos de R. Recuerda comentar o tendrás 7 años de mala suerte en el lab)
 
-¿Qué tipo de objeto creamos al cargar la base?
-¿Cómo se ven las primeras 6 líneas del archivo?
-¿Cuántas muestras hay?
-¿De cuántos estados se tienen muestras?
-¿Cuántas muestras fueron colectadas antes de 1980?
-¿Cuántas muestras hay de cada raza?
-En promedio ¿a qué altitud fueron colectadas las muestras?
-¿Y a qué altitud máxima y mínima fueron colectadas?
-Crea una nueva df de datos sólo con las muestras de la raza OlotilloCrea una nueva df de datos sólo con las muestras de la raza Reventador, Jala y Ancho
-Escribe la matriz anterior a un archivo llamado "submat.cvs" en /meta.
+¿Qué tipo de objeto creamos al cargar la base? ¿Cómo se ven las primeras 6 líneas del archivo? ¿Cuántas muestras hay? ¿De cuántos estados se tienen muestras? ¿Cuántas muestras fueron colectadas antes de 1980? ¿Cuántas muestras hay de cada raza? En promedio ¿a qué altitud fueron colectadas las muestras? ¿Y a qué altitud máxima y mínima fueron colectadas? Crea una nueva df de datos sólo con las muestras de la raza OlotilloCrea una nueva df de datos sólo con las muestras de la raza Reventador, Jala y Ancho Escribe la matriz anterior a un archivo llamado "submat.cvs" en /meta
+
+# Repositorio Introducción a la bioinformática y la investigación reproducible para el análisis genómico
+
+[Tareas_BioinfRepro2025_MLFG](https://github.com/maluflorezg/Tareas_BioinfRepro2025_MLFG) 
+
+Este repositorio se realiza con el fin de darle seguimiento al curso de bioinformática que me encuentro realizando dentro del magister en Genéitca. 
+
+En el repo se cargaran las tareas asignadas cada semana
+
+ Actualmente en [Tareas_BioinfRepro2025_MLFG](https://github.com/maluflorezg/Tareas_BioinfRepro2025_MLFG) se encuentra:
+
+1. **Carpeta [BioinfinvRepro](https://github.com/maluflorezg/Tareas_BioinfRepro2025_MLFG/tree/main/BioinfinvRepro "BioinfinvRepro")**
+   
+   Es una clonación de [GitHub - u-genoma/BioinfinvRepro: Curso de introducción a la bioinformática e investigación reproducible](https://github.com/u-genoma/BioinfinvRepro.git). Incluye el material docente que se debe actualizar, además incluye información sobre los ejercicios/Tareas a realizar
+
+2. **Carpeta [Tareas_sesiones](https://github.com/maluflorezg/Tareas_BioinfRepro2025_MLFG/tree/main/Tareas_sesiones "Tareas_sesiones")** 
+
+Contiene sub carpetas de las **Tareas por Sesión** que incluirá el material requerido para la realización de la tarea
+
+3. README.md con el detalle de lo realizado por sesion que se actualizara a medida que avanza el curso
+   
+   
+   
+   Agre tareas y actualizo archivos de la Unidad 1
