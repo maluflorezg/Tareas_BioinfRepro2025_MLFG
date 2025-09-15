@@ -2,7 +2,7 @@
 
 [Tareas_BioinfRepro2025_MLFG](https://github.com/maluflorezg/Tareas_BioinfRepro2025_MLFG)
 Este es un repositorio del curso "Introducción a la bioinformática e investigación reproducible para análisis genéticos" II semestre 2025. 
-Se crea con el fin de darle seguimiento al curso donde se cargaran las tareas asignadas cada semana. 
+Se crea con el fin de darle seguimiento al curso, subiendo las tareas asignadas y actializaciones. 
 
 Actualmente en [Tareas_BioinfRepro2025_MLFG](https://github.com/maluflorezg/Tareas_BioinfRepro2025_MLFG) se encuentra:
 
