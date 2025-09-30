@@ -6,11 +6,11 @@ Se crea con el fin de darle seguimiento al curso, subiendo las tareas asignadas 
 
 Actualmente en [Tareas_BioinfRepro2025_MLFG](https://github.com/maluflorezg/Tareas_BioinfRepro2025_MLFG) se encuentra:
 
-1. Carpeta [BioinfinvRepro](https://github.com/maluflorezg/Tareas_BioinfRepro2025_MLFG/tree/main/BioinfinvRepro "BioinfinvRepro")**
+1. **Carpeta [BioinfinvRepro](https://github.com/maluflorezg/Tareas_BioinfRepro2025_MLFG/tree/main/BioinfinvRepro "BioinfinvRepro")**
    Es una clonación de [GitHub - u-genoma/BioinfinvRepro: Curso de introducción a la bioinformática e investigación reproducible](https://github.com/u-genoma/BioinfinvRepro.git). Incluye el material docente que se debe actualizar, además incluye información sobre los ejercicios/Tareas a realizar
-2. Carpeta [Tareas_sesiones](https://github.com/maluflorezg/Tareas_BioinfRepro2025_MLFG/tree/main/Tareas_sesiones "Tareas_sesiones")**
+2. **Carpeta [Tareas_sesiones](https://github.com/maluflorezg/Tareas_BioinfRepro2025_MLFG/tree/main/Tareas_sesiones "Tareas_sesiones")**
    Contiene sub carpetas de las **Tareas por Sesión** que incluirá el material requerido para la realización de la tarea
-3. README.md con el detalle de lo realizado por sesion que se actualizara a medida que avanza el curso
+3. **README.md con el detalle de lo realizado por sesion que se actualizara a medida que avanza el curso
 
 # TAREA 1 - Introducción a la programación
 
@@ -131,27 +131,3 @@ Ejercicio: Al script del ejercicio de las pruebas de Mantel, agrega el código n
 (averigua cada punto con comandos de R. Recuerda comentar o tendrás 7 años de mala suerte en el lab)
 
 ¿Qué tipo de objeto creamos al cargar la base? ¿Cómo se ven las primeras 6 líneas del archivo? ¿Cuántas muestras hay? ¿De cuántos estados se tienen muestras? ¿Cuántas muestras fueron colectadas antes de 1980? ¿Cuántas muestras hay de cada raza? En promedio ¿a qué altitud fueron colectadas las muestras? ¿Y a qué altitud máxima y mínima fueron colectadas? Crea una nueva df de datos sólo con las muestras de la raza OlotilloCrea una nueva df de datos sólo con las muestras de la raza Reventador, Jala y Ancho Escribe la matriz anterior a un archivo llamado "submat.cvs" en /meta
-
-# Repositorio Introducción a la bioinformática y la investigación reproducible para el análisis genómico
-
-[Tareas_BioinfRepro2025_MLFG](https://github.com/maluflorezg/Tareas_BioinfRepro2025_MLFG) 
-
-Este repositorio se realiza con el fin de darle seguimiento al curso de bioinformática que me encuentro realizando dentro del magister en Genéitca. 
-
-En el repo se cargaran las tareas asignadas cada semana
-
- Actualmente en [Tareas_BioinfRepro2025_MLFG](https://github.com/maluflorezg/Tareas_BioinfRepro2025_MLFG) se encuentra:
-
-1. **Carpeta [BioinfinvRepro](https://github.com/maluflorezg/Tareas_BioinfRepro2025_MLFG/tree/main/BioinfinvRepro "BioinfinvRepro")**
-   
-   Es una clonación de [GitHub - u-genoma/BioinfinvRepro: Curso de introducción a la bioinformática e investigación reproducible](https://github.com/u-genoma/BioinfinvRepro.git). Incluye el material docente que se debe actualizar, además incluye información sobre los ejercicios/Tareas a realizar
-
-2. **Carpeta [Tareas_sesiones](https://github.com/maluflorezg/Tareas_BioinfRepro2025_MLFG/tree/main/Tareas_sesiones "Tareas_sesiones")** 
-
-Contiene sub carpetas de las **Tareas por Sesión** que incluirá el material requerido para la realización de la tarea
-
-3. README.md con el detalle de lo realizado por sesion que se actualizara a medida que avanza el curso
-   
-   
-   
-   Agre tareas y actualizo archivos de la Unidad 1
