@@ -1,4 +1,4 @@
-👩🏻‍💻 # Introducción a la bioinformática y la investigación reproducible para el análisis genómico
+# Introducción a la bioinformática y la investigación reproducible para el análisis genómico 👩🏻‍💻
 
 [Tareas_BioinfRepro2025_MLFG](https://github.com/maluflorezg/Tareas_BioinfRepro2025_MLFG)
 Este es un repositorio del curso "Introducción a la bioinformática e investigación reproducible para análisis genéticos" II semestre 2025. 
@@ -6,11 +6,11 @@ Se crea con el fin de darle seguimiento al curso, subiendo las tareas asignadas 
 
 Actualmente en [Tareas_BioinfRepro2025_MLFG](https://github.com/maluflorezg/Tareas_BioinfRepro2025_MLFG) se encuentra:
 
-1. **Carpeta [BioinfinvRepro](https://github.com/maluflorezg/Tareas_BioinfRepro2025_MLFG/tree/main/BioinfinvRepro "BioinfinvRepro")**
+1. **Carpeta 📁[BioinfinvRepro](https://github.com/maluflorezg/Tareas_BioinfRepro2025_MLFG/tree/main/BioinfinvRepro "BioinfinvRepro")**
    Es una clonación de [GitHub - u-genoma/BioinfinvRepro: Curso de introducción a la bioinformática e investigación reproducible](https://github.com/u-genoma/BioinfinvRepro.git). Incluye el material docente que se debe actualizar, además incluye información sobre los ejercicios/Tareas a realizar
-2. **Carpeta [Tareas_sesiones](https://github.com/maluflorezg/Tareas_BioinfRepro2025_MLFG/tree/main/Tareas_sesiones "Tareas_sesiones")**
+2. **Carpeta 📁[Tareas_sesiones](https://github.com/maluflorezg/Tareas_BioinfRepro2025_MLFG/tree/main/Tareas_sesiones "Tareas_sesiones")**
    Contiene sub carpetas de las **Tareas por Sesión** que incluirá el material requerido para la realización de la tarea
-3. **README.md con el detalle de lo realizado por sesion que se actualizara a medida que avanza el curso
+3. **README.md 📋 Detalle de lo realizado por sesion que se actualizara a medida que avanza el curso
 
 # TAREA 1 - Introducción a la programación
 
