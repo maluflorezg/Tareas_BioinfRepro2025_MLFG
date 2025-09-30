@@ -1,4 +1,4 @@
-# Introducción a la bioinformática y la investigación reproducible para el análisis genómico
+👩🏻‍💻# Introducción a la bioinformática y la investigación reproducible para el análisis genómico
 
 [Tareas_BioinfRepro2025_MLFG](https://github.com/maluflorezg/Tareas_BioinfRepro2025_MLFG)
 Este es un repositorio del curso "Introducción a la bioinformática e investigación reproducible para análisis genéticos" II semestre 2025. 
