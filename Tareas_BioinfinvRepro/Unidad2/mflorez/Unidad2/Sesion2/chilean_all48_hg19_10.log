@@ -1,0 +1,26 @@
+PLINK v1.90b6.22 64-bit (16 Apr 2021)
+Options in effect:
+  --bfile chilean_all48_hg19_9
+  --make-bed
+  --out chilean_all48_hg19_10
+  --remove to_romeve_by_relatedness.txt
+
+Hostname: genoma
+Working directory: /home/bioinfo1/mflorez/Tareas_BioinfRepro2025_MLFG/Tareas_BioinfinvRepro/Unidad2/mflorez/Unidad2/Sesion2
+Start time: Wed Oct  1 16:40:10 2025
+
+Random number seed: 1759347610
+31640 MB RAM detected; reserving 15820 MB for main workspace.
+458097 variants loaded from .bim file.
+45 people (26 males, 19 females) loaded from .fam.
+45 phenotype values loaded from .fam.
+--remove: 42 people remaining.
+Using 1 thread (no multithreaded calculations invoked).
+Before main variant filters, 42 founders and 0 nonfounders present.
+Calculating allele frequencies... done.
+458097 variants and 42 people pass filters and QC.
+Among remaining phenotypes, 0 are cases and 42 are controls.
+--make-bed to chilean_all48_hg19_10.bed + chilean_all48_hg19_10.bim +
+chilean_all48_hg19_10.fam ... done.
+
+End time: Wed Oct  1 16:40:10 2025
