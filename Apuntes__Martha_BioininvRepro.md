@@ -172,8 +172,6 @@ nuevos_final.fam
 
 (puedes salir con `q` si no quieres escrolear (yes, esa palabra no existe en español) todo el archivo para abajo)
 
-
-
 `less` Igual que `more` pero se desarrolló más recientemente y puede abrir archivos binarios y otras cosas raras. Juego de palabras con que *less is more*. Pum pum. Se recomienda usar `less` en la vida.
 
 Dentro de `less` (y `more`) podemos escribir `/` y luego texto, mismo que será buscando dentro del archivo.
@@ -210,8 +208,6 @@ $ wc nuevos_final.fam
 `cat`Viene de *Concatenate*. Sirve para unir uno detrás de otro varios archivos, o para imprimir todo el contendio de un archivo a la consola.
 
 Viene de *Concatenate*. Sirve para unir uno detrás de otro varios archivos, o para imprimir todo el contendio de un archivo a la consola.
-
-
 
 ### Usos comunes de `grep`
 
@@ -281,8 +277,6 @@ $ grep -oE "\| \w+ \w+" tomatesverdes.fasta
 | Physalis philadelphica
 ```
 
-
-
 `sed` es particularmente útil para sustituir una expresión regular (como una palabra) por otra.
 
 Por ejemplo esta línea cambia "Solanum lycopersicum" del archivo "tomates.fasta" por "jitomate"
@@ -292,8 +286,6 @@ sed 's/Solanum lycopersicum/jitomate/' tomates.fasta
 ```
 
 `awk` es parecido, pero es particularmente útil para archivos con filas y columnas, pues puedes acceder específicamente a ellas.
-
-
 
 ### Actualización del repo BioinfinvRepro
 
@@ -329,12 +321,15 @@ Crea uno nuevo vacío.
 
 En tu servidor, elimina la carpeta .git y vuelve a iniciar el repo:
 
-rm -rf .git
+```
+git rm -rf .
 git init
 git remote add origin git@github.com:maluflorezg/Tareas_BioinfRepro2025_MLFG.git
 git add .
 git commit -m "Repo limpio sin archivos grandes"
 git push -u origin main
+```
+
 
 
 Así subes solo lo actual y sin la historia “sucia”.
@@ -348,34 +343,29 @@ Ejemplo con BFG:
 bfg --delete-files plink.hwe
 bfg --delete-files 1kG_MDS6.ped
 
-
 Luego fuerzas el push:
 
 git push origin main --force
-
 
 👉 Te recomiendo la opción 1 (empezar limpio) si no necesitas mantener la historia de commits.
 Verifica en qué rama estás:
 
 git branch
 
-
 Si estás en master, cámbiale el nombre a main:
 
 git branch -M main
-
 
 Ahora enlaza tu repo con GitHub y sube:
 
 git remote add origin git@github.com:maluflorezg/Tareas_BioinfRepro2025_MLFG.git
 git push -u origin main
 
-
 👉 Después de esto, tu carpeta Prac_Uni5 debería estar en GitHub en la rama main, limpia y sin los archivos gigantes. 🚀
 Como actualizar el git
 
 1. Asegurarme de estar en mi repo 
-bioinfo1@genoma:~$ cd ~/mflorez/Tareas_BioinfRepro2025_MLFG
+   bioinfo1@genoma:~$ cd ~/mflorez/Tareas_BioinfRepro2025_MLFG
 
 Qué hacer ahora
 
@@ -383,22 +373,18 @@ Ve a la carpeta de tu repo:
 
 cd ~/mflorez/Tareas_BioinfRepro2025_MLFG
 
-
 Ahora prueba:
 
 git remote -v
-
 
 Debe salir:
 
 origin  git@github.com:maluflorezg/Tareas_BioinfRepro2025_MLFG.git (fetch)
 origin  git@github.com:maluflorezg/Tareas_BioinfRepro2025_MLFG.git (push)
 
-
 Para confirmar la rama:
 
 git branch
-
 
 Para ver el último commit:
 
