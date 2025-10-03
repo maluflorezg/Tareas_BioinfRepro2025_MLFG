@@ -1,24 +1,41 @@
 #!/usr/bin/env Rscript
 
-infile <- "results/allele_freq_biallelic.frq"
-out_tsv <- "results/maf_values.tsv"
-out_png <- "results/maf_histogram.png"
+# Archivos de entrada y salida (rutas relativas desde code/)
+infile <- "../results/frecuencias_bialelicas.frq"
+out_tsv <- "../results/maf_values.tsv"
+out_png <- "../results/maf_histogram.png"
 
-df <- read.table(infile, header = TRUE, stringsAsFactors = FALSE)
+# Cargar librería
+suppressMessages(library(ggplot2))
 
-# Extraer las frecuencias de las columnas 5 y 6 (A1:A2)
-f1 <- as.numeric(sub(".*:", "", df[[5]]))
-f2 <- as.numeric(sub(".*:", "", df[[6]]))
+# Leer archivo de frecuencias generado con vcftools --freq
+freq <- read.table(infile, header = TRUE, stringsAsFactors = FALSE)
 
-# Minor Allele Frequency
+# Extraer frecuencias de los alelos (5ª y 6ª columna suelen contener las frecuencias)
+f1 <- as.numeric(sub(".*:", "", freq[[5]]))
+f2 <- as.numeric(sub(".*:", "", freq[[6]]))
+
+# Calcular la MAF como el mínimo entre las dos frecuencias
 maf <- pmin(f1, f2, na.rm = TRUE)
 
-# Guardar los valores en un archivo TSV
+# Guardar los valores de MAF en un TSV
 out <- data.frame(MAF = maf)
-write.table(out, file = out_tsv, sep = "\t", row.names = FALSE, quote = FALSE)
+write.table(out,
+            file = out_tsv,
+            sep = "\t",
+            row.names = FALSE,
+            quote = FALSE)
 
-# Histograma de MAF
-png(out_png, width = 1200, height = 800, res = 150)
-hist(maf, breaks = 50, main = "MAF spectrum (biallelic)", 
-     xlab = "Minor allele frequency")
-dev.off()
+# Graficar histograma
+p <- ggplot(out, aes(x = MAF)) +
+  geom_histogram(binwidth = 0.05, fill = "steelblue", color = "black", boundary = 0) +
+  labs(title = "Espectro de frecuencias alélicas menores (MAF)",
+       x = "Frecuencia alélica menor (MAF)",
+       y = "Número de variantes") +
+  theme_minimal(base_size = 14)
+
+ggsave(out_png, plot = p, width = 8, height = 6, dpi = 300)
+
+cat("✅ Script finalizado. Archivos creados:\n")
+cat(" - Valores de MAF:", out_tsv, "\n")
+cat(" - Histograma MAF:", out_png, "\n")
