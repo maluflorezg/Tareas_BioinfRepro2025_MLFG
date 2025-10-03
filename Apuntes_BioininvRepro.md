@@ -330,8 +330,6 @@ git commit -m "Repo limpio sin archivos grandes"
 git push -u origin main
 ```
 
-
-
 Así subes solo lo actual y sin la historia “sucia”.
 
 Opción avanzada (limpiar la historia)
