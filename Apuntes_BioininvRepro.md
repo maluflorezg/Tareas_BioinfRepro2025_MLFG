@@ -330,60 +330,8 @@ git commit -m "Repo limpio sin archivos grandes"
 git push -u origin main
 ```
 
-Así subes solo lo actual y sin la historia “sucia”.
+#### COMANDOS `vcft`
 
-Opción avanzada (limpiar la historia)
+`wc -l` cuenta **todas las líneas del archivo**, incluyendo: 
 
-Usar una herramienta como BFG Repo-Cleaner o git filter-repo para eliminar de todo el historial los archivos grandes.
-
-Ejemplo con BFG:
-
-bfg --delete-files plink.hwe
-bfg --delete-files 1kG_MDS6.ped
-
-Luego fuerzas el push:
-
-git push origin main --force
-
-👉 Te recomiendo la opción 1 (empezar limpio) si no necesitas mantener la historia de commits.
-Verifica en qué rama estás:
-
-git branch
-
-Si estás en master, cámbiale el nombre a main:
-
-git branch -M main
-
-Ahora enlaza tu repo con GitHub y sube:
-
-git remote add origin git@github.com:maluflorezg/Tareas_BioinfRepro2025_MLFG.git
-git push -u origin main
-
-👉 Después de esto, tu carpeta Prac_Uni5 debería estar en GitHub en la rama main, limpia y sin los archivos gigantes. 🚀
-Como actualizar el git
-
-1. Asegurarme de estar en mi repo 
-   bioinfo1@genoma:~$ cd ~/mflorez/Tareas_BioinfRepro2025_MLFG
-
-Qué hacer ahora
-
-Ve a la carpeta de tu repo:
-
-cd ~/mflorez/Tareas_BioinfRepro2025_MLFG
-
-Ahora prueba:
-
-git remote -v
-
-Debe salir:
-
-origin  git@github.com:maluflorezg/Tareas_BioinfRepro2025_MLFG.git (fetch)
-origin  git@github.com:maluflorezg/Tareas_BioinfRepro2025_MLFG.git (push)
-
-Para confirmar la rama:
-
-git branch
-
-Para ver el último commit:
-
-git log -1
+las líneas del **encabezado (`##`, `#CHROM`, etc.)** y las **líneas de variantes**.
