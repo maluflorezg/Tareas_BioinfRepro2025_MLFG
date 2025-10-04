@@ -1,0 +1,28 @@
+PLINK v1.90b7.2 64-bit (11 Dec 2023)
+Options in effect:
+  --double-id
+  --make-bed
+  --out maf_menor_005
+  --vcf maf_menor_005.recode.vcf
+
+Hostname: genoma
+Working directory: /home/bioinfo1/mflorez/Tareas_BioinfRepro2025_MLFG/Unidad2/Sesion1/Prac_Uni5/results
+Start time: Sat Oct  4 17:16:59 2025
+
+Random number seed: 1759609019
+31640 MB RAM detected; reserving 15820 MB for main workspace.
+--vcf: maf_menor_005-temporary.bed + maf_menor_005-temporary.bim +
+maf_menor_005-temporary.fam written.
+586 variants loaded from .bim file.
+18 people (0 males, 0 females, 18 ambiguous) loaded from .fam.
+Ambiguous sex IDs written to maf_menor_005.nosex .
+Using 1 thread (no multithreaded calculations invoked).
+Before main variant filters, 18 founders and 0 nonfounders present.
+Calculating allele frequencies... done.
+Total genotyping rate is 0.769625.
+586 variants and 18 people pass filters and QC.
+Note: No phenotypes present.
+--make-bed to maf_menor_005.bed + maf_menor_005.bim + maf_menor_005.fam ...
+done.
+
+End time: Sat Oct  4 17:16:59 2025
