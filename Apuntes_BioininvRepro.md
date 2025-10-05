@@ -1,7 +1,16 @@
 ### **APUNTES**
 
-Comandos
-`pwd` nos da el directorio en donde estamos (viene de print **working directory**).
+Conectar con github:
+~ macbookair$ cd Tareas_BioinfRepro2025_MLFG/
+Tareas_BioinfRepro2025_MLFG macbookair
+
+$ git remote -v
+
+
+
+### Comandos
+
+###### `pwd` nos da el directorio en donde estamos (viene de print **working directory**).
 
 `cd` viene de **change directory** y sirve para movernos a otro directorio
 
