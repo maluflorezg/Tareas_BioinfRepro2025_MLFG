@@ -14,7 +14,7 @@ cargar vcftools: `module load vcftools`
 
 Consulta el [manual de VCFtools](https://vcftools.github.io/man_latest.html) y escribe un script que responda lo siguiente para el archivo `GATK_ChGdb_recalibrated.autosomes.12262013.snps.known.vcf`  **sin copiarlo a su directorio**:
 
-1. ¿Cuántos individuos y variantes (SNPs) tiene el archivo?
+1. #### ¿Cuántos individuos y variantes (SNPs) tiene el archivo?
    
    Resutado: **18 individuos y 4450483 variantes**
    
@@ -36,7 +36,7 @@ Consulta el [manual de VCFtools](https://vcftools.github.io/man_latest.html) y
    4450360 
    ```
 
-2. ¿Cuántos sitios del archivo no tienen datos perdidos?
+2. #### ¿Cuántos sitios del archivo no tienen datos perdidos?
    
    El número de sitios del archivo sin datos perdidos es **382.626**.
    
@@ -59,7 +59,7 @@ After filtering, kept 382626 out of a possible 4450360 Sites
 Run Time = 32.00 seconds
 ```
 
-3. Genera un archivo en tu carpeta de trabajo `Prac_Uni5/data` que contenga solo SNPs en una ventana de 2Mb en cualquier cromosoma. Nombra el archivo`CLG_Chr2_2_4Mb.vcf` donde es número del cromosoma, es el inicio de la ventana genómica y es el final en megabases.
+3. #### Genera un archivo en tu carpeta de trabajo `Prac_Uni5/data` que contenga solo SNPs en una ventana de 2Mb en cualquier cromosoma. Nombra el archivo`CLG_Chr2_2_4Mb.vcf` donde es número del cromosoma, es el inicio de la ventana genómica y es el final en megabases.
    
    ```
    vcftools --gzvcf /datos/compartido/ChileGenomico/GATK_ChGdb_recalibrated.autosomes.12262013.snps.known.vcf.gz --chr 2 --from-bp 2000000 --to-bp 4000000 --recode --out CLG_Chr2_2-4Mb
@@ -90,7 +90,7 @@ Run Time = 32.00 seconds
    
    Genera un archivo `CLG_Chr2_2-4Mb.vcf.gz`
 
-4. Reporta cuántas variantes tienen el archivo generado
+4. #### Reporta cuántas variantes tienen el archivo generado
    
    Respuesta: El archivo `CLG_Chr2_2-4Mb.vcf` contiene **3559 variantes** en esa ventana de 2 Mb
    
@@ -111,7 +111,7 @@ Run Time = 32.00 seconds
    `grep -v "^#"` : Muestra solo las líneas que **no** comienzan con `#` (descarta los encabezados).
    `wc -l`: Cuenta cuántas variantes hay
 
-5. Reporta la cobertura promedio para todos los individuos del set de datos.
+5. #### Reporta la cobertura promedio para todos los individuos del set de datos.
    
    ```
    vcftools --gzvcf CLG_Chr2_2-4Mb.vcf.gz --depth
@@ -130,7 +130,7 @@ Run Time = 32.00 seconds
    
    **Cobertura Total Promedio: 2.49X**
 
-6. Calcula la frecuencia de cada alelo para todos los individuos dentro del archivo y guarda el resultado en un archivo
+6. #### Calcula la frecuencia de cada alelo para todos los individuos dentro del archivo y guarda el resultado en un archivo
    
    ```
    vcftools --gzvcf CLG_Chr2_2-4Mb.vcf.gz --freq --out frecuencias
@@ -161,7 +161,7 @@ Run Time = 32.00 seconds
    **N_CHR**: Número de cromosomas muestreados (2 × número de individuos diploides)
    **{ALLELE:FREQ}**: Frecuencia de cada alelo
 
-7. Filtra el archivo de frecuencias para solo incluir variantes bialélicas (tip: awk puede ser útil para realizar esta tarea, tip2: puedes usar bcftools para filtrar variantes con más de dos alelos antes de calcular las frecuencias).
+7. #### Filtra el archivo de frecuencias para solo incluir variantes bialélicas (tip: awk puede ser útil para realizar esta tarea, tip2: puedes usar bcftools para filtrar variantes con más de dos alelos antes de calcular las frecuencias).
    
    ```
    awk 'NR==1 || ($3 != "." && $4 != ".")' frecuencias.frq > frecuencias_bialelicas.frq
@@ -191,7 +191,7 @@ Run Time = 32.00 seconds
    
    Quedaron **3560 frecuencias_bialelicas.frq**
 
-8. Llama a un script escrito en lenguaje R que lee el archivo de frecuencias de variantes bialélicas y guarda un histograma con el espectro de MAF para las variantes bialélicas
+8. #### Llama a un script escrito en lenguaje R que lee el archivo de frecuencias de variantes bialélicas y guarda un histograma con el espectro de MAF para las variantes bialélicas
    
    ```
    # script_R_ejercicio8.R
@@ -244,7 +244,7 @@ Run Time = 32.00 seconds
    
    ![Texto alternativo] (![loading-ag-2036](/Users/macbookair/Tareas_BioinfRepro2025_MLFG/Unidad2/imagenes/maf_histogram.png)
 
-9. ¿Cuántos sitios tienen una frecuencia del alelo menor <0.05?
+9. #### ¿Cuántos sitios tienen una frecuencia del alelo menor <0.05?
    
    **`--maf 0.05`** : Le pide a VCFtools que **mantenga solo los sitios donde la frecuencia alélica menor (MAF)** sea **mayor o igual a 0.05**.  
    Es decir, elimina los SNPs raros (los que tienen alelos con frecuencia < 0.05).
@@ -265,7 +265,7 @@ Run Time = 32.00 seconds
    
    **Hay 581 sitios con una frecuencia del alelo menor a 0.05.**
 
-10. Calcula la heterocigosidad de cada individuo.
+10. #### Calcula la heterocigosidad de cada individuo.
     
     ```
     vcftools --gzvcf CLG_Chr2_2-4Mb.vcf.gz --het --out heterocigosidad
@@ -313,7 +313,7 @@ Run Time = 32.00 seconds
     CD5J-106 0.128492 0.334198 0.61554
     ```
 
-11. Calcula la diversidad nucleotídica por sitio.
+11. #### Calcula la diversidad nucleotídica por sitio.
     
     La **diversidad nucleotídica (π)** mide la cantidad promedio de diferencias por sitio entre dos secuencias elegidas al azar de una población.  
     En otras palabras, indica **cuán variable** es la población a nivel de nucleótidos.
@@ -341,7 +341,7 @@ Run Time = 32.00 seconds
     2    2006872    0.225806
     ```
 
-12. Filtra los sitios que tengan una frecuencia del alelo menor <0.05
+12. #### Filtra los sitios que tengan una frecuencia del alelo menor <0.05
     
     ```
     vcftools --gzvcf CLG_Chr2_2-4Mb.vcf.gz --maf 0.05 --recode --recode-INFO-all --out maf_low
@@ -364,7 +364,7 @@ Run Time = 32.00 seconds
     
     Crea el archivo `maf_menor_005.recode.vcf` con **solo los sitios que tienen frecuencia menor a 0.05**.
 
-13. Convierte el archivo `wolves_maf05.vcf` a formato plink.
+13. #### Convierte el archivo `wolves_maf05.vcf` a formato plink.
     
     ```
     plink --vcf maf_menor_005.recode.vcf --make-bed --double-id --out maf_menor_005
@@ -374,66 +374,41 @@ Esto genera 3 archivos:
 
 `maf_menor_005.bed`, `maf_menor_005.bim`y `maf_menor_005.fam`
 
-__________________________________________________________________________________________________
+---
+
+---
+
+
 
 ### EJECICIOS PLINK
 
-1. Enlista los archivos plink que hay en `Unidad2/Sesion1/Prac_Uni5/data`. ¿Qué tipos de archivos son cada uno?
-   **`chilean_all48_hg19.bed`**: Archivo binario (no de texto). Contiene la matriz de genotipos codificada en formato compacto: cada SNP (columna) y cada individuo (fila). Guarda la información genética de los individuos de forma eficiente.
-   
-   
-   
-   1. `chilean_all48_hg19.bim`**: Archivo de texto (tabulado). Describe los **SNPs o variantes genéticas** incluidas en el `.bed`.
-      
-      **Columnas típicas (6):**
-      
-      1. Cromosoma
-      
-      2. ID del SNP
-      
-      3. Posición genética (en centiMorgans, opcional)
-      
-      4. Posición física (bp)
-      
-      5. Alelo 1
-      
-      6. Alelo 2
-   
-   **`chilean_all48_hg19.fam`**: Archivo de texto (tabulado). Describe la **información de los individuos** (las filas de la matriz del `.bed`).
-   
-   **Columnas típicas (6):**
-   
-   1. ID de familia
-   
-   2. ID del individuo
-   
-   3. ID del padre
-   
-   4. ID de la madre
-   
-   5. Sexo (1 = hombre, 2 = mujer, 0 = desconocido)
-   
-   6. Fenotipo (p. ej. 1 = control, 2 = caso o valor cuantitativo)
-      
-      
-      
-      **`chilean_all48_hg19_popinfo.csv`**: Archivo CSV de metadatos. Información complementaria sobre las muestras, como población, región, o código del individuo. **No es parte del trío de PLINK**, pero se usa para agrupar individuos o hacer análisis poblacionales.
-   
-   | Archivo | Tipo           | Contenido              | Función principal           |
-   | ------- | -------------- | ---------------------- | --------------------------- |
-   | `.bed`  | Binario        | Genotipos              | Datos genéticos codificados |
-   | `.bim`  | Texto tabulado | SNPs / variantes       | Describe los marcadores     |
-   | `.fam`  | Texto tabulado | Individuos / fenotipos | Describe las muestras       |
-   | `.csv`  | Texto (CSV)    | Metadatos adicionales  | Información poblacional     |
+#### 1. Enlista los archivos plink que hay en `Unidad2/Sesion1/Prac_Uni5/data`. ¿Qué tipos de archivos son cada uno?
 
-2. Consulta el manual de [plink1.9](https://www.cog-genomics.org/plink/1.9/formats) y contesta utilizando comandos de plink lo siguiente. Deposita cualquier arquico que generes an una carpeta `Unididad2/Prac_Uni5/results`:
+
+
+- **`chilean_all48_hg19.bed`**: Archivo binario (no de texto). Contiene la matriz de genotipos codificada en formato compacto: cada SNP (columna) y cada individuo (fila). Guarda la información genética de los individuos de forma eficiente.
+
+- **`chilean_all48_hg19.bim`**: Archivo de texto (tabulado). Describe los **SNPs o  variantes genéticas** incluidas en el `.bed`. Columnas típicas (Cromosoma, ID del SNP, Posición genética, Posición física (bp), Alelo 1, Alelo 2).
+
+- **`chilean_all48_hg19.fam`**: Archivo de texto (tabulado). Describe la **información de los individuos** (las filas de la matriz del `.bed`: ID de familia, ID del individuo, ID padre, ID madre, Sexo (1 = hombre, 2 = mujer, 0 = desconocido), Fenotipo (ej. 1 = control, 2 = caso))
+
+- **`chilean_all48_hg19_popinfo.csv`**: Archivo CSV de metadatos. Información complementaria sobre las muestras, como población, región, o código del individuo. **No es parte del trío de PLINK**, pero se usa para agrupar individuos o hacer análisis poblacionales.
+
+| Archivo | Tipo           | Contenido              | Función principal           |
+| ------- | -------------- | ---------------------- | --------------------------- |
+| `.bed`  | Binario        | Genotipos              | Datos genéticos codificados |
+| `.bim`  | Texto tabulado | SNPs / variantes       | Describe los marcadores     |
+| `.fam`  | Texto tabulado | Individuos / fenotipos | Describe las muestras       |
+| `.csv`  | Texto (CSV)    | Metadatos adicionales  | Información poblacional     |
+
+2. #### Consulta el manual de [plink1.9](https://www.cog-genomics.org/plink/1.9/formats) y contesta utilizando comandos de plink lo siguiente. Deposita cualquier arquico que generes an una carpeta `Unididad2/Prac_Uni5/results`:
    
    ```
    module load plink/1.90
    plink
    ```
 
-a) Transforma de formato `.bed` a formato `.ped` (pista: sección Data Managment). El nombre del output debe ser igual, solo cambiando la extensión.
+#### 2.a) Transforma de formato `.bed` a formato `.ped` (pista: sección Data Managment). El nombre del output debe ser igual, solo cambiando la extensión.
 
 ```
 plink --bfile ../data/chilean_all48_hg19 --recode --out ../results/chilean_all48_hg19
@@ -465,7 +440,7 @@ chilean_all48_hg19.ped
 chilean_all48_hg19.map
 ```
 
-b) Crea otro archivo ped (ojo PPPPed) pero esta vez filtrando los SNPs cuya frecuencia del alelo menor sea menor a 0.05 Y filtrando los individuos con más de 10% missing data. Tu output debe llamarse **maicesArtegaetal2015_maf05_missing10**
+#### 2.b) Crea otro archivo ped (ojo PPPPed) pero esta vez filtrando los SNPs cuya frecuencia del alelo menor sea menor a 0.05 y filtrando los individuos con más de 10% missing data. Tu output debe llamarse **maicesArtegaetal2015_maf05_missing10**
 
 ```
 plink --bfile ../data/chilean_all48_hg19 --recode --maf 0.05 --mind 0.1 --out ../results/maicesArtegaetal2015_maf05_missing10
@@ -498,10 +473,11 @@ Total genotyping rate in remaining samples is 0.994669.
 Among remaining phenotypes, 0 are cases and 46 are controls.
 ```
 
-**¿Cuántos SNPs y cuántos individuos fueron removidos por los filtros?**
-Se crean dos archivos en ../results/: 
-`maicesArtegaetal2015_maf05_missing10.ped`
-`maicesArtegaetal2015_maf05_missing10.map`
+#### **¿Cuántos SNPs y cuántos individuos fueron removidos por los filtros?**
+
+Se crean dos archivos en ../results/:
+
+`maicesArtegaetal2015_maf05_missing10.ped` `maicesArtegaetal2015_maf05_missing10.map`
 
 **Datos iniciales:**
 813366 variants loaded from .bim file.
@@ -513,9 +489,7 @@ Se crean dos archivos en ../results/:
 
 Resultado: **466296 variantes y 46 individuos pasaron el filtro y QC** 
 
-
-
-c) Realiza un reporte de equilibrio de Hardy-Weinberg sobre el archivo `chilean_all48_hg19_maf05_missing10` creado en el ejercicio anterior. El nombre del archivo de tu output debe contener chilean_all48_hg19_maf05_missing10.
+#### 2.c) Realiza un reporte de equilibrio de Hardy-Weinberg sobre el archivo `chilean_all48_hg19_maf05_missing10` creado en el ejercicio anterior. El nombre del archivo de tu output debe contener chilean_all48_hg19_maf05_missing10.
 
 ```
 plink --bfile ../results/chilean_all48_hg19_maf05_missing10 --hardy --out ../results/chilean_all48_hg19_maf05_missing10
@@ -582,29 +556,11 @@ Genotipos observados:      18 individuos **T/T**
 No se observaron heterocigotos (`O(HET) = 0`), pero se esperaban casi 48% (`E(HET) = 0.4764`).
 El valor p (`5.994e-14`) indica **una fuerte desviación del equilibrio HWE**.
 
-d) Observa el archivo `maicesArtegaetal2015.fam`. Consulta la documentación de plink para determinar que es cada columna. ¿Qué información hay y no hay en este archivo?
+#### d) Observa el archivo `maicesArtegaetal2015.fam`. Consulta la documentación de plink para determinar que es cada columna. ¿Qué información hay y no hay en este archivo?
 
 ```
 plink --bfile ../data/chilean_all48_hg19 --make-bed --out ../data/maicesArtegaetal2015
-PLINK v1.90b6.22 64-bit (16 Apr 2021)          www.cog-genomics.org/plink/1.9/
-(C) 2005-2021 Shaun Purcell, Christopher Chang   GNU General Public License v3
-Logging to ../data/maicesArtegaetal2015.log.
-Options in effect:
-  --bfile ../data/chilean_all48_hg19
-  --make-bed
-  --out ../data/maicesArtegaetal2015
 
-31640 MB RAM detected; reserving 15820 MB for main workspace.
-813366 variants loaded from .bim file.
-48 people (27 males, 21 females) loaded from .fam.
-48 phenotype values loaded from .fam.
-Using 1 thread (no multithreaded calculations invoked).
-Before main variant filters, 48 founders and 0 nonfounders present.
-Calculating allele frequencies... done.
-Warning: 11824 het. haploid genotypes present (see
-../data/maicesArtegaetal2015.hh ); many commands treat these as missing.
-Warning: Nonmissing nonmale Y chromosome genotype(s) present; many commands
-treat these as missing.
 Total genotyping rate is 0.989751.
 813366 variants and 48 people pass filters and QC.
 Among remaining phenotypes, 0 are cases and 48 are controls.
@@ -620,7 +576,13 @@ maicesArtegaetal2015.bed  maicesArtegaetal2015.fam  maicesArtegaetal2015.log
 maicesArtegaetal2015.bim  maicesArtegaetal2015.hh
 ```
 
+#### d) Observa el archivo `maicesArtegaetal2015.fam`. Consulta la documentación de plink para determinar que es cada columna.
+
+##### ¿Qué información hay y no hay en este archivo?
+
 `maicesArtegaetal2015.fam`
+
+FID, IID, Paternal ID, Maternal ID, Sex y Phenotype
 
 ```
 head maicesArtegaetal2015.fam
@@ -630,36 +592,161 @@ ARI006      ARI006    0 0 1 1
 ARI021      ARI021    0 0 1 1
 ARI022      ARI022    0 0 2 1
 CDSJ174     CDSJ174   0 0 1 1
-CDSJ175     CDSJ175   0 0 1 1
-CDSJ046     CDSJ046   0 0 1 1
-CDSJ176     CDSJ176   0 0 1 1
-CDSJ469     CDSJ469   0 0 2 1
 ```
 
-| Columna | Nombre                  | Descripción                                             | Ejemplo   |
-| ------- | ----------------------- | ------------------------------------------------------- | --------- |
-| **1**   | **Family ID (FID)**     | Identificador del grupo familiar (o población)          | `CDSJ177` |
-| **2**   | **Individual ID (IID)** | Identificador único del individuo                       | `CDSJ177` |
-| **3**   | **Paternal ID**         | ID del padre (0 si se desconoce)                        | `0`       |
-| **4**   | **Maternal ID**         | ID de la madre (0 si se desconoce)                      | `0`       |
-| **5**   | **Sex**                 | Sexo biológico (1 = macho, 2 = hembra, 0 = desconocido) | `1`       |
-| **6**   | **Phenotype**           | Fenotipo (1 = control, 2 = caso, 0 o −9 = faltante)     | `1`       |
+- Los archivos **`.bed`**: Contiene la matriz de genotipos .
 
+- Los archivos **`.bim`**: Describe los **SNPs o  variantes genéticas** (Cromosoma, ID del SNP, Posición genética, Posición física (bp), Alelo 1, Alelo 2).
 
-
-4. Utiliza la info el archivo `data/chilean_all48_hg19_popinfo.csv` y el comando `update-ids` de plink para cambiar los nombres de las muestras de `data/chilean_all48_hg19.fam` de tal forma que el family ID corresponda a la info de la columna `Categ.Altitud` en `maizteocintle_SNP50k_meta_extended.txt`. Pista: este ejercicio requiere varias operaciones, puedes dividirlas en diferentes scripts de bash o de R y bash. Tu respuesta debe incluir todos los scripts (y deben estar en /code).
+- Los archivos **`.csv`**: Archivo de metadatos. Información complementaria sobre las muestras, como población, región, o código del individuo.
+4. #### Utiliza la info el archivo `data/chilean_all48_hg19_popinfo.csv` y el comando `update-ids` de plink para cambiar los nombres de las muestras de `data/chilean_all48_hg19.fam` de tal forma que el family ID corresponda a la info de la columna `Categ.Altitud` en `maizteocintle_SNP50k_meta_extended.txt`. Pista: este ejercicio requiere varias operaciones, puedes dividirlas en diferentes scripts de bash o de R y bash. Tu respuesta debe incluir todos los scripts (y deben estar en /code).
    
-   Reviso el archivo `data/chilean_all48_hg19_popinfo.csv`
+   El archivo `chilean_all48_hg19_popinfo.csv`
    
    ```
-   
+   head chilean_all48_hg19_popinfo.csv 
+   "IndID","Sex","Source","Region","Population","Ancestry","IndLab"
+   "ARI-001","F","ChileGenomico","FarNorth","Arica","Aymara","ARI-001"
+   "ARI-002","F","ChileGenomico","FarNorth","Arica","Aymara","ARI-002"
+   "ARI-003","F","ChileGenomico","FarNorth","Arica","Aymara","ARI-003"
+   "ARI-004","M","ChileGenomico","FarNorth","Arica","Aymara","ARI-004"
    ```
    
+   `IndID` → identificador de individuo (se usará para empatar)
+   `Ancestry` o `Region` → nueva etiqueta que se usara como FID
    
-5. Realiza un cuna comparación entre el sexo y archivo `fam`y el `popinfo` y calcula la proporción de discordancias
+   #### PASO 1 — Crear el archivo `update_ids.txt`
+   
+   Se debe generar un archivo con 4 columnas:
+   
+   **| old_FID | old_IID | new_FID | new_IID |**
+   
+   Se crea el *scrip* en R
+   
+   ```
+   # update_ids.R
+   # Crear el archivo update_ids.txt a partir de popinfo
+   
+   # Leer el archivo popinfo
+   popinfo <- read.csv("../data/chilean_all48_hg19_popinfo.csv")
+   
+   # Leer el archivo FAM (contiene 6 columnas: "FID", "IID", "PID", "MID", "SEX", "PHENO")
+   fam <- read.table("../data/chilean_all48_hg19.fam", header = FALSE)
+   colnames(fam) <- c("FID", "IID", "PID", "MID", "SEX", "PHENO")
+   
+   # Unir ambos archivos por ID
+   # by.x = "IID": usa la columna IID del .fam
+   # by.y = "IndID": usa la columna IndID del popinfo.csv
+   # all.x = TRUE: conserva todos los individuos del .fam, incluso si no están en popinfo
+   
+   merged <- merge(fam, popinfo, by.x = "IID", by.y = "IndID", all.x = TRUE)
+   
+   # Crear nuevo FID (usaremos la columna "Region" o "Ancestry")
+   merged$new_FID <- merged$Ancestry
+   merged$new_FID[is.na(merged$new_FID)] <- "Unknown"
+   
+   # Usa la columna "Ancestry" del popinfo como nuevo grupo
+   # Si falta el dato (NA), se reemplaza por "Unknown"
+   
+   # Crear el archivo para PLINK
+   update_ids <- merged[, c("FID", "IID", "new_FID", "IID")]
+   
+   ARI013  ARI013  Aymara  ARI013
+   ARI014  ARI014  Aymara  ARI014
+   ARI015  ARI015  Aymara  ARI015
+   ARI017  ARI017  Aymara  ARI017
+   ARI018  ARI018  Aymara  ARI018
+   ARI019  ARI019  Aymara  ARI019
+   ARI021  ARI021  Aymara  ARI021
+   ARI022  ARI022  Aymara  ARI022
+   # Guardar en results
+   write.table(update_ids, "../results/update_ids.txt",
+               quote = FALSE, row.names = FALSE, col.names = FALSE, sep = "\t")
+   
+   cat("Archivo '../results/update_ids.txt' creado correctamente.\n")
+   ```
+
+#### PASO 2 — Aplicar `update-ids` en PLINK
+
+```
+plink --bfile ../data/chilean_all48_hg19 \
+      --update-ids ../results/update_ids.txt \
+      --make-bed \
+      --out ../results/chilean_all48_hg19_updated
+```
+
+Se generan los siguistes archivos:
+
+`chilean_all48_hg19_updated.bed`
+`chilean_all48_hg19_updated.bim`
+`chilean_all48_hg19_updated.fam`
+
+#### PASO 3 — Verificar el resultado `chilean_all48_hg19_updated.fam`
+
+Abre el `.fam` nuevo: Columnas: FID     IID     PID     MID     SEX     PHENO
+
+```
+head ../results/chilean_all48_hg19_updated.fam
+Mapuche CDSJ177 0 0 1 1
+Aymara CDSJ021 0 0 1 1
+Aymara ARI006 0 0 1 1
+Aymara ARI021 0 0 1 1
+Aymara ARI022 0 0 2 1
+Mapuche CDSJ174 0 0 1 1
+Mapuche CDSJ175 0 0 1 1
+Mapuche CDSJ046 0 0 1 1
+Mapuche CDSJ176 0 0 1 1
+Mapuche CDSJ469 0 0 2 1
+```
+
+5. #### Realiza una comparación entre el sexo y archivo `fam`y el `popinfo` y calcula la proporción de discordancias
+
+`--check-sex` de PLINK compara el **sexo biológico (según los genotipos X/Y)** con el **sexo declarado** en el archivo `.fam`.  
+
+##### Paso 1. Preparar un archivo de sexo para PLINK
+
+ Queremos comparar el `.fam` con `popinfo.csv`.
+
+Primero, crea un archivo `popinfo_sex.txt` con formato:`IID SEX`  (1-->`macho` o`2`--> `hembra`). Se puede hacer con `awk`
+
+```
+awk -F',' 'NR>1 {gsub(/"/, "", $0); sex=($3=="M"||$2=="M")?1:2; print $1, sex}' ../data/chilean_all48_hg19_popinfo.csv > ../results/popinfo_sex.txt
+```
+
+- Lee el archivo CSV (saltando la cabecera)
+
+- Elimina las comillas `"`
+
+- Convierte “M” o “F” en 1 o 2,
+
+- Crea un archivo listo para PLINK.
+
+##### Paso 2 . Comparo con el `.fam`
+
+Verifico las discordancias entre el sexo del `.fam` y el `popinfo_sex.txt`:
+
+```
+plink --bfile ../data/chilean_all48_hg19 --update-sex ../results/popinfo_sex.txt --make-bed --out ../results/tmp_check_sex
+```
+
+##### Paso 3: Calcular proporción de discordancias
+
+Se comparan los dos archivos (`.fam` original vs. `.fam` actualizado):
+
+```
+paste ../data/chilean_all48_hg19.fam ../results/tmp_check_sex.fam | \
+awk '{if ($6 != $12) diff++} END {print "Discordancias:", diff, "\nTotal:", NR, "\nProporción:", diff/NR*100, "%"}'
+```
+
+##### Resultado Discordancias:
+
+Total: 48 
+Proporción: 0 %
+
+
+
+6. #### Realiza un test de estimación de sexo usando plink y reporta los resultados en formato de tabla para todos los individuos con discordancia entre el sexto reportado en `fam` y el calculado con plink.
    
    
-6. Realiza un test de estimación de sexo usando plink y reporta los resultados en formato de tabla para todos los individuos con discordancia entre el sexto reportado en `fam` y el calculado con plink.
-   
-   
-7. Genera una tabla de contingencia de individuos por sexo y ancestría (hint: ver columna Ancestry en el archivo `popinfo`)
+
+7. #### Genera una tabla de contingencia de individuos por sexo y ancestría (hint: ver columna Ancestry en el archivo `popinfo`)
