@@ -2,3 +2,12 @@ Tareas_BioinfinvRepro/Unidad2/mflorez/Unidad2/Sesion2/*.ped
 Tareas_BioinfinvRepro/Unidad2/mflorez/Unidad2/Sesion2/*.hwe
 Tareas_BioinfinvRepro/Unidad2/mflorez/Unidad2/Sesion2/*.snps
 Tareas_BioinfinvRepro/Unidad2/mflorez/Unidad2/Sesion2/*.bed
+*.bed
+*.bim
+*.fam
+*.snps
+*.hwe
+*.log
+*.mds
+*.genome
+*.tar.gz
