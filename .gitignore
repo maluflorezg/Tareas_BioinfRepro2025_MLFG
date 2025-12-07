@@ -18,3 +18,12 @@ Unidad3/Sesion4/QIAseq_DNA_tutorial/
 *.fastq
 *.fastq.gz
 *.zip
+
+# Archivos grandes de alineamiento
+Unidad3/Sesion1/*.sam
+Unidad3/Sesion1/*.sai
+Unidad3/Sesion1/mflorez/
+
+# Archivos de sesión de R
+*.RData
+*.Rhistory
