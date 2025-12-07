@@ -213,20 +213,30 @@ Trabajo individual:
 
 #### [Sesión 2: Análisis genético de poblaciones](Unidad2/Sesion2/Tutorial_PopGeno.md)
 
+[**VIDEO: Sesión 2.2**](https://youtu.be/LtxeavYa6sE)
+
 * PCA exploratorios
 * Análisis de estructura poblacional
 * Análisis de mestizaje
 
-#### Sesión 3: Análisis de ADN antiguo
+#### [Sesión 3: Genética de Poblaciones 2](Unidad2/Sesion3/Tutorial_de_Genetica_de_Poblaciones_usado_estadisticos_F.md)
 
-* Particularidades de los datos aDNA
-* Limpieza de datos
-* Llamado de variantes
-* Algunos análisis poblaciones con aDNA
+Profesora: Constanza de la Fuente, Programa de Genética Humana, Facultad de Medicina, Universidad de Chile
+[**PPT: Sesión 2.3**](Unidad2/Sesion3/Genetica_de_Poblaciones_2.pdf)
+[**VIDEO: Sesión 2.3**](https://youtu.be/BdNl7IJzCt0)
+
+* Estadísticos F2, F3, F4
+
+* qpWave – qpAdm
+
+* Modelos pqGraph
 
 ### Unidad 3 Generación y alineamiento de datos NGS
 
-#### Sesión 1 Generación y QC de datos NGS
+#### [Sesión 1 Generación y QC de datos NGS](Unidad3/Sesion1/Tutorial_Control_de_calidad_de_lecturas_NGS.md)
+
+[**PPT: Sesión 3.1**](Unidad3/Sesion1/Sesion1_Generacion_Analisis_de_datosNGS_RAV_2019.pdf)
+[**VIDEO: Sesión 3.1**](https://www.youtube.com/watch?v=aoZ6o4silGk)
 
 * Técnicas de secuenciación
 * Errores de secuenciación
@@ -236,33 +246,63 @@ Trabajo individual:
 
 * Formatos fastq, bam, vcf
 
-#### **Sesión 2: Introducción a las bases de datos**
+#### [Sesión 2: Introducción a las bases de datos](Unidad3/Sesion2/Tutorial_cBioPortal.md)
+
+[**PPT: Sesión 3.2**](Unidad3/Sesion2/Sesion2_DBBiologicas_bioinfo.pdf)
+[**VIDEO: Sesión 3.2**](https://youtu.be/h-IQFwbv7Cs)
 
 * Datos de secuencias
 * Bases de datos biológicas
 
-#### **Sesión 3: Análisis de secuencias**
+#### [Sesión 3: Análisis de secuencias](Unidad3/Sesion3/README.md)
 
-* Alineamiento contra un genoma de referencia
-* Llamado de variantes
+* [Alineamiento contra un genoma de referencia](Unidad3/Sesion3/Tutorial_filtro_alineamiento_lecturas_chilegenomicolab.md)
+* [Llamado de variantes](Unidad3/Sesion3/Tutorial_para_el_llamado_de_variantes.md)
+  [PPT: Sesión 3.3](Unidad3/Sesion3/Alineamiento_y_llamado_variantes_NGS_2025.pdf)
 
 Trabajo individual:
 
 * Predicción funcional de variantes
 * Interpretación y anotación de variantes
 
-#### **Sesión 4: Genómica del cáncer**
+#### [Sesión 4: Análisis de ADN con CLC](Unidad3/Sesion4/Analisis_con_CLC.md)
+
+* Herramientoas de analisis de NGS de Qiagen
+* Introducción al CLC Genomics Workbench
+* Demostración análisis de datos NGS con CLC
+  [VIDEO: Sesión 3.4](https://qiagen.zoom.us/rec/share/EkeRexxOe4uKvhc4qMgovZgsJItv3vvCeG6x80uXhFuJsdE0aFlTMQLva__DNmzE.Lfx8UQTsUdvnONR5) (Passcode: ^4BTqT6?)
+
+#### [Sesión 5: Genómica del cáncer](Unidad3/Sesion5/Tutorial_Sarek.md)
 
 * Llamado de mutaciones somáticas
+
 * Aplicaciones para la precisión del diagnóstico
+  
+  ##### Material:
 
-### Unidad 4 Análisis de transcriptomas
+* [VIDEO: Sesión 3.5 Clase](https://youtu.be/qp91ZbavBfQ)
 
-#### **Sesión 1 Expresión diferencial**
+* [VIDEO: Sesión 3.5 Nomenclatura mutaciones](https://youtu.be/dFuxDvJlfNY)
+
+* [VIDEO: Sesión 3.5 Tutorial](https://youtu.be/CrGRCj8p85k)
+
+### [Unidad 4 Análisis de transcriptomas](Unidad4/Analisis_de_Transcriptomas.md)
+
+#### [Sesión 1 Expresión diferencial](Unidad4/Sesion1/Tutorial_de_expresion_diferencial_en_R.md)
 
 * Microarreglos
+
 * Diseño experimental
+
 * Análisis de expresión diferencial
+  
+  ##### Material:
+
+* [Láminas proyectadas en clase](Unidad4/Sesion1/Sesion1_Expresion_diferencial.pdf)
+
+* [VIDEO: Sesión 4.1 Clase](https://youtu.be/-GOh4KGDnVU)
+
+* [VIDEO: Sesión 4.1 Tutorial](https://youtu.be/un-eTG0keXc)
 
 #### **Sesión 2 Análisis funcional**
 
