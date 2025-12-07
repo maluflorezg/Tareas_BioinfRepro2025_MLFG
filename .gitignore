@@ -27,3 +27,4 @@ Unidad3/Sesion1/mflorez/
 # Archivos de sesión de R
 *.RData
 *.Rhistory
+*.DS_Store
