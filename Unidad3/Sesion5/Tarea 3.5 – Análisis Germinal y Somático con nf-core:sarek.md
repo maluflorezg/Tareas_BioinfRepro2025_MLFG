@@ -622,8 +622,6 @@ La lista mostrada corresponde a variantes **somáticas no-hotspot** → en OncoK
 
 ### 
 
-
-
 -
 
 ```
@@ -662,8 +660,6 @@ cat R1.mutect2.filtered.ann.vcf | grep 'missense_variant' | grep -E 'BRCA1|BRCA2
 | **PDGFRB** | P462S, A929T, G1036D       | No fusión ni hotspot; VUS                           |
 | **IKZF1**  | L414P                      | No hotspot, ICUS/VUS                                |
 | **KRAS**   | T20M                       | Reportada pero sin evidencia clínica, no G12/G13e). |
-
-
 
 Todas las variantes identificadas son cambios missense de impacto moderado en genes clásicos de cáncer (BRAF, JAK2, KRAS y BRCA2). Sin embargo, ninguna corresponde a los hotspots canónicos ampliamente descritos (por ejemplo, BRAF V600E, KRAS G12C o JAK2 V617F), y al contrastarlas con OncoKB no se encuentran clasificadas como mutaciones claramente oncogénicas o clínicamente accionables. La mayoría aparecen en bases como ClinVar o el Allele Registry como variantes reportadas, muchas de ellas con significado clínico incierto (VUS). Por lo tanto, su relevancia biológica y clínica debe interpretarse con cautela y, en ausencia de evidencia funcional o clínica adicional, se consideran variantes sin clasificación definitiva.
 
