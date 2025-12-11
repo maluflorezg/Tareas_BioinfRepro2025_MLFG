@@ -1,0 +1,3 @@
+patient,sample,sex,status,type,lane,fastq_1,fastq_2
+P1,S7,NA,0,WGS,1,./data/R1.fastq.gz,./data/R2.fastq.gz
+

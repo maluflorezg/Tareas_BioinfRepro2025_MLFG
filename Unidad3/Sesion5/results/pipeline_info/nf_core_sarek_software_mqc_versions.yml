@@ -1,0 +1,53 @@
+BCFTOOLS_STATS:
+  bcftools: 1.21
+BWAMEM1_MEM:
+  bwa: 0.7.18-r1243-dirty
+  samtools: 1.21
+CALCULATECONTAMINATION:
+  gatk4: 4.6.1.0
+CREATE_INTERVALS_BED:
+  gawk: 5.3.0
+FASTP:
+  fastp: 0.24.0
+FASTQC:
+  fastqc: 0.12.1
+FILTERMUTECTCALLS:
+  gatk4: 4.6.1.0
+GATHERPILEUPSUMMARIES:
+  gatk4: 4.6.1.0
+GATK4_APPLYBQSR:
+  gatk4: 4.6.1.0
+GATK4_BASERECALIBRATOR:
+  gatk4: 4.6.1.0
+GATK4_GATHERBQSRREPORTS:
+  gatk4: 4.6.1.0
+GATK4_MARKDUPLICATES:
+  gatk4: 4.6.1.0
+  samtools: 1.21
+GETPILEUPSUMMARIES:
+  gatk4: 4.6.1.0
+INDEX_CRAM:
+  samtools: 1.21
+LEARNREADORIENTATIONMODEL:
+  gatk4: 4.6.1.0
+MERGEMUTECTSTATS:
+  gatk4: 4.6.1.0
+MERGE_CRAM:
+  samtools: 1.21
+MERGE_MUTECT2:
+  gatk4: 4.6.1.0
+MOSDEPTH:
+  mosdepth: 0.3.10
+MUTECT2:
+  gatk4: 4.6.1.0
+SAMTOOLS_STATS:
+  samtools: 1.21
+TABIX_BGZIPTABIX_INTERVAL_COMBINED:
+  tabix: 1.21
+TABIX_BGZIPTABIX_INTERVAL_SPLIT:
+  tabix: 1.21
+VCFTOOLS_TSTV_COUNT:
+  vcftools: 0.1.16
+Workflow:
+    nf-core/sarek: v3.6.1-g9b85c0f
+    Nextflow: 25.10.0
