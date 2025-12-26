@@ -1,5 +1,3 @@
-
-
 # Tarea 4.1 - Análisis de expresión diferencial en R
 
 ### Martha Flórez
@@ -224,8 +222,6 @@ En vez de seleccionar un gen si cualquier sonda asPara el análisis funcional se
 ```
 genes.int <- tapply(probes.int, results$EntrezID, all)
 ```
-
-
 
 ```
         GO.ID                                        Term Annotated Significant
