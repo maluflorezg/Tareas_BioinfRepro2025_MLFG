@@ -3,7 +3,9 @@
 **Autora: Martha Flórez**  
 **Fecha: 07.12.2025** 
 
-## 1. Introducción
+## PREPARACIÓN DE LOS DATOS
+
+### 1. Introducción
 
 El análisis de variantes germinales y somáticas es fundamental para comprender tanto la predisposición hereditaria como los mecanismos moleculares adquiridos por un tumor. En este trabajo se aplicó el pipeline **nf-core/sarek**, estándar en bioinformática clínica, para realizar:
 
@@ -21,9 +23,9 @@ Finalmente, se compararon ambos perfiles genómicos y se discutió su relevancia
 
 ---
 
-## 2. Metodología
+### 2. Metodología
 
-### 2.1. Estructura de trabajo
+#### 2.1. Estructura de trabajo
 
 El proyecto se organizó en los siguientes directorios:
 
@@ -39,13 +41,13 @@ Sesion5/
 └── results/
 ```
 
-### 2.2 Activación del ambiente de sarek
+#### 2.2 Activación del ambiente de sarek
 
 ```
 pyenv activate sarek_taller-pyenv
 ```
 
-### 2.3 Directorio de trabajo
+#### 2.3 Directorio de trabajo
 
 Te recomendamos crear una carpeta de trabajo que tenga subdirectorios con los datos de input y la salida del pipeline sarek.
 
@@ -72,19 +74,11 @@ mv S7_R2.fastq.gz R2.fastq.gz
 
 ---
 
-### 2.4 Scripts
+#### 2.4 Scripts
 
-Te presentamos un script para ejecutar el pipeline sarek para datos germinales.
+El tutorial entrega un script para ejecutar el pipeline sarek:
 
-A continuación te mostramos en qué consiste el script `sarek_germinal.sh`. El llamador de variantes que debes usar para variantes germinales es haplotypecaller.
-
-Entra al directorio `code`
-
-```
-cd code
-```
-
-Luego, con un editor de texto ,por ej. nano, crear un archivo bash para ejecutar el modo germinal de sarek:
+##### 2.4.1 Datos germinales
 
 ```
 #!/bin/bash
@@ -166,7 +160,9 @@ bash sarek_somatic.sh ../data/R1.fastq.gz ../data/R2.fastq.gz ../results S7
 
 ---
 
-A continuación mostramos el script `sarek_somatic.sh`. El llamador de variantes mutect2.
+##### 2.4.2 Datos somáticos
+
+A continuación se muestra el script `sarek_somatic.sh`. El llamador de variantes mutect2.
 
 ```
 #!/bin/bash
@@ -241,15 +237,9 @@ Ejecutar el siguiente comando:
 bash sarek_somatic.sh R1.fastq.gz R2.fastq.gz ../results
 ```
 
-Los dos script son capaces de:
+---
 
-- Detecta nombre_muestra desde R1 si no se lo das
-
-- Crea samplesheet_germline_.csv en el outdir
-
-- Llama a Sarek con ese CSV
-
-Debemos crear un archivo de configuración para indicarle a nextflow la capacidad de memoria que debe utilizar. Para esto creamos el archivo `local_sarek_8cpus.config` que debe estar en el directorio `code`.
+Se debe crear un archivo de configuración para indicarle a nextflow la capacidad de memoria que debe utilizar. Para esto creamos el archivo `local_sarek_8cpus.config` que debe estar en el directorio `code`.
 
 ```
 // Config local para correr Sarek en un servidor con 16 CPUs
@@ -273,7 +263,7 @@ process {
 }
 ```
 
-### 2.5 Asignar permisos de ejecución
+#### 2.5 Asignar permisos de ejecución
 
 Una vez que se haya creado ambos script debes darles permisos de ejecución.
 
@@ -283,7 +273,7 @@ chmod +x sarek_germinal.sh
 chmod +x sarek_somatic.sh
 ```
 
-### 2.6 Ejecución
+#### 2.6 Ejecución
 
 Para correr ambos scripts debes ejecutar el siguiente código entregando como parámetro la ruta del read 1 y read 2 y el directorio de salida. Reemplaza los nombres de archivos de acuerdo a lo necesario.
 
@@ -303,7 +293,11 @@ Nota: muestre los comandos usados y desde qué directorio se ejecutaron en su in
 
 ---
 
-## Trabajo práctico: Análisis germinal y somático con nf-core/sarek + interpretación en OncoKB y gnomAD
+---
+
+## TRABAJO PRÁCTICO
+
+### Análisis germinal y somático con nf-core/sarek + interpretación en OncoKB y gnomAD
 
 ```
 Sesion5/
@@ -326,10 +320,10 @@ En este trabajo práctico aplicarás el pipeline **nf-core/sarek** para:
 1. Ejecutar un **análisis germinal** (variantes constitucionales) a partir de un FASTQ.
 2. Ejecutar un **análisis somático** (variantes adquiridas en el tumor) usando la misma muestra tumoral.
 3. Comparar cuantitativamente los resultados germinales vs somáticos.
-4. Realizar una **búsqueda e interpretación de variantes** usando:
+4. Realizar una búsqueda e interpretación de variantes usando:
    - **OncoKB** (base de conocimiento oncológica somática).
    - **gnomAD** (frecuencias poblacionales germinales).
-5. Elaborar un **informe corto** discutiendo las diferencias observadas y la posible relevancia biológica/clínica de las variantes seleccionadas obtenidas a apartir del análisis germinal versus el somático.
+5. Elaborar un informe corto discutiendo las diferencias observadas y la posible relevancia biológica/clínica de las variantes seleccionadas obtenidas a apartir del análisis germinal versus el somático.
 
 ---
 
@@ -343,7 +337,7 @@ En este trabajo práctico aplicarás el pipeline **nf-core/sarek** para:
 
 ---
 
-### 3. Análisis germinal y somático con sarek
+### 3. Análisis Germinal y Somático con Sarek
 
 #### 3.1. Ejecución del pipeline germinal y somático
 
@@ -362,13 +356,13 @@ Se trabajó con dos conjuntos de variantes:
 
 ##### Variantes germinales
 
-- Llamadas a partir de **HaplotypeCaller (GATK)**.
+- Llamadas a partir de **HaplotypeCaller**.
 
 - Representan variantes heredadas presentes en todas las células.
 
 ##### Variantes somáticas
 
-- Llamadas a partir de **Mutect2 (GATK)**.
+- Llamadas a partir de **Mutect2**.
 
 - Representan variantes adquiridas específicas del tumor.
 
@@ -424,7 +418,7 @@ bcftools view -H \
 
 ### 4. Obtención de variantes
 
-**Archivo base utilizado:**
+#### Archivo base utilizado:
 
 - `R1.haplotypecaller.filtered.vcf.gz` 
 
@@ -452,14 +446,14 @@ Tanto las variantes germinales como las somáticas fueron anotadas usando:
 
 Debido a limitaciones de memoria del servidor, se asignó memoria adicional a Java:`export _JAVA_OPTIONS="-Xmx4g"`. Luego se ejecutó snpEff en ambos casos:
 
-**Germinal:**
+**GERMINAL:**
 
 ```
 snpEff -v GRCh38.86 R1.haplotypecaller.filtered.vcf.gz >
 R1.haplotypecaller.filtered.ann.vcf
 ```
 
-**Somático:**
+**SOMATICO:**
 
 ```
 snpEff -v GRCh38.86 R1.mutect2.filtered.vcf.gz >
@@ -511,7 +505,7 @@ germinal_nonsyn.vcf
 somatic_nonsyn.vcf`
 ```
 
-Estos archivos representan la base para el **análisis clínico y biológico posterior** del estudio.
+Estos archivos representan la base para el análisis clínico y biológico posterior del estudio.
 
 ---
 
@@ -554,7 +548,7 @@ snpEff_somatica_summary.html
 
 Los siguientes comandos fueron utilizados para filtrar las variantes de mayor impacto tanto variantes germinales como somáticas.
 
-##### 8.1. Germinales
+#### 8.1. Germinales
 
 ```
 $ zcat R1.haplotypecaller.filtered.ann.vcf.gz \
@@ -589,16 +583,17 @@ Genera el archivo `R1_filtered_missense_rs.ann.vcf`
 
 ---
 
-La mayoría de las variantes germinales identificadas (en PAX5, FLT3, BRCA2 y CALR) presentan frecuencias alélicas muy altas en población general, y están clasificadas en ClinVar como variantes benignas o polimorfismos comunes, por lo que no se consideran responsables de un fenotipo monogénico de alto riesgo.  
+La mayoría de las variantes germinales identificadas (en **PAX5, FLT3, BRCA2 y CALR**) presentan frecuencias alélicas muy altas en población general, y están clasificadas en ClinVar como variantes benignas o polimorfismos comunes, por lo que no se consideran responsables de un fenotipo monogénico de alto riesgo.  
+
 En contraste, variantes como **MPL p.Met8Val** y **IL7 p.Thr118Ile** son extremadamente raras en gnomAD y suelen clasificarse como variantes de significado incierto (VUS), mientras que **ABL1 p.Met370Thr** es una variante germinal muy rara con descripciones previas como patogénica/likely pathogenic en un síndrome de malformaciones. Estas variantes requieren interpretación cuidadosa en relación con el fenotipo clínico y otras evidencias (funcionales, segregación, etc.).
 
 ---
 
 ---
 
-##### 8.2 Somáticas
+#### 8.2. Somáticas
 
-El archivo `R1_somatic_missense_all.ann.vcf` podemos armar una tabla resumen muy clara usando **el primer efecto ANN de cada variante** (el missense principal).
+El archivo `R1_somatic_missense_all.ann.vcf` podemos hecer una tabla resumen usando el primer efecto ANN de cada variante (el missense principal).
 
 Aquí está la tabla (10 variantes):
 
@@ -615,14 +610,12 @@ Aquí está la tabla (10 variantes):
 | 9   | chr7      | 50 400 308  | T>C     | **IKZF1**  | missense_variant                         | MODERATE | c.1241T>C               | p.Leu414Pro          | PASS      | 3   | 0.500 |
 | 10  | chr7      | 140 734 740 | A>G     | **BRAF**   | missense_variant                         | MODERATE | c.2158T>C               | p.Ser720Pro          | PASS      | 6   | 0.400 |
 
-Primero, contexto general (igual que para la tabla anterior):  
-OncoKB **sí incluye estos genes** (MPL, SF3B1, KIT, PDGFRB, IKZF1, BRAF) como genes accionables u oncológicos, pero sólo **algunos hotspots específicos** (p.ej. MPL W515, SF3B1 K700E/R625, KIT D816, PDGFRB fusions, IKZF1 deleciones, BRAF V600), no cualquier missense rara.
+
+OncoKB incluye estos genes (MPL, SF3B1, KIT, PDGFRB, IKZF1, BRAF) como genes accionables u oncológicos, pero sólo **algunos hotspots específicos** (p.ej. MPL W515, SF3B1 K700E/R625, KIT D816, PDGFRB fusions, IKZF1 deleciones, BRAF V600), no cualquier missense rara.
 
 La lista mostrada corresponde a variantes **somáticas no-hotspot** → en OncoKB, como regla general, se manejan como *“other missense / unknown significance”* si es que aparecen, y muchas ni siquiera están listadas individualmente.
 
-### 
 
--
 
 ```
 zcat R1.mutect2.filtered.ann.vcf \
@@ -650,7 +643,7 @@ cat R1.mutect2.filtered.ann.vcf | grep 'missense_variant' | grep -E 'BRCA1|BRCA2
 | 9   | chr12     | 25 245 326 | G>A     | **KRAS**  | missense_variant | MODERATE | p.Thr20Met               | c.59C>T                     | PASS                       | 2          | 0.67                 |
 | 10  | chr13     | 32 337 226 | T>A     | **BRCA2** | missense_variant | MODERATE | p.Asn957Lys              | c.2871T>A                   | PASS                       | 6          | 0.33                 |
 
-#### 6.1. Somáticas → OncoKB
+##### Somáticas → OncoKB
 
 | Gen        | Variantes encontradas      | Situación en OncoKB                                 |
 | ---------- | -------------------------- | --------------------------------------------------- |
@@ -665,7 +658,7 @@ Todas las variantes identificadas son cambios missense de impacto moderado en ge
 
 ---
 
-9. ### Discusión
+### 9. Discusión
 
 El análisis reveló diferencias claras entre los perfiles germinal y somático:
 
@@ -681,7 +674,7 @@ El análisis reveló diferencias claras entre los perfiles germinal y somático:
 
 ---
 
-### **10. Conclusiones**
+### 10. Conclusiones
 
 - El pipeline **nf-core/sarek** permitió realizar un flujo de análisis robusto de variantes germinales y somáticas.
 
