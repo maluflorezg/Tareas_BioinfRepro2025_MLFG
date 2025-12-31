@@ -1,13 +1,8 @@
-Session 1: “My First Commands” This session aims to introduce students to basic programming and the use of the command line (bash), with an emphasis on fundamental skills for bioinformatics, such as:
+🧪 Session 1 – Introduction / First Exercises
+This session contains:
 
-Understanding what code is in computing and how it differs from other analytical methods.
+Text file with samples [names_of_samples](https://github.com/maluflorezg/Tareas_BioinfRepro2025_MLFG/blob/main/Unidad1/Sesion_1/data/nombres_muestras.txt)
 
-How to find help on demand (doc, man, Google, etc.).
+PDF document with the first assignment completed [Tarea01] (https://github.com/maluflorezg/Tareas_BioinfRepro2025_MLFG/blob/main/Unidad1/Sesion_1/Tarea01_Florez_Martha.pdf)
 
-Introduction to using the bash console and command line (navigating directories, listing, moving/copying files).
-
-Basic file manipulation functions with bash (pipes, redirection, grep, etc.).
-
-Introduction to simple bash scripts.
-
-Performing classic file exploration and manipulation tasks from the terminal.
+The purpose of this session was to introduce file handling and basic R practice, as well as adding these files to the repository.
