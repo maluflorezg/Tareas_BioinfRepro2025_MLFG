@@ -30,15 +30,15 @@ This unit is divided into sessions. In each session you will find:
 
 - `README.md`: session description and guide.
 
-- `data/`: input files.
+- `data`: input files.
 
-- `code/`: scripts or notebooks with analyses.
+- `code`: scripts or notebooks with analyses.
 
-- `results/`: analysis outputs (tables, metrics).
+- `results`: analysis outputs (tables, metrics).
 
-- `figures/`: generated graphs.
+- `figures`: generated graphs.
 
-- `docs/`: supplementary documents (if applicable).
+- `docs`: supplementary documents (if applicable).
 
 The sessions are designed to progressively cover the entire workflow of an ANN-seq analysis.
 
@@ -48,7 +48,7 @@ The sessions are designed to progressively cover the entire workflow of an ANN-s
 
 - **Session 1** – Introduction to ANN-seq analysis and environment setup.
 
----- - **Session 2** – Quality control of RNA-seq reads.
+- **Session 2** – Quality control of RNA-seq reads.
 
 - **Session 3** – Read preprocessing and cleanup.
 
