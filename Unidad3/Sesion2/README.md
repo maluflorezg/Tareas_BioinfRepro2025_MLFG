@@ -27,8 +27,6 @@ This session focuses on **RNA-seq read quality control**, a fundamental step in 
 ## Files in this Session
 In this folder you will find:
 
-[Figures](https://github.com/maluflorezg/Tareas_BioinfRepro2025_MLFG/tree/main/Unidad3/Sesion2/Figures): Generated graphs and visual representations.
-[Taras 3.2.md](Tarea 3.2.md)
+- [Figures](https://github.com/maluflorezg/Tareas_BioinfRepro2025_MLFG/tree/main/Unidad3/Sesion2/Figures): Generated graphs and visual representations.
 
-
-- Discussion of quality control results.
+- [Tarea 3.2.md](Tarea 3.2.md): Discussion of quality control results.
