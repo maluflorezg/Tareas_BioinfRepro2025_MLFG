@@ -1,0 +1,3 @@
+### Folder `DE_tutorial`
+
+[DE_tutorial](https://github.com/maluflorezg/Tareas_BioinfRepro2025_MLFG/tree/main/Unidad4/Sesion1/DE_tutorial): folder contains a **tutorial on differential expression analysis** applied to RNA-seq data. It includes sample input data, scripts or analysis notebooks that implement statistical methods (e.g., with DESeq2 or similar packages), generated results (tables of differentially expressed genes and visualizations), and explanatory documentation for each step. This material serves as a practical guide for learning how to perform reproducible differential expression analysis.
