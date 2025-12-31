@@ -50,12 +50,12 @@ Within each session, you will find:
 
 - `README.md`: session description.
 
-- `code/`: Scripts, commands, or notebooks used.
+- `code`: Scripts, commands, or notebooks used.
 
-- `data/`: Input data.
+- `data`: Input data.
 
-- `results/`: Generated results.
+- `results`: Generated results.
 
-- `figures/`: Figures and visualizations.
+- `figures`: Figures and visualizations.
 
-- `docs/`: Supporting documents.
+- `docs`: Supporting documents.
