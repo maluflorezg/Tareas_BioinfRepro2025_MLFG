@@ -35,7 +35,7 @@ Unidad 1 - Introducción a la programación
    
    Sesion_2: Preparación y limpieza del Ambiente de Trabajo
    
-   [Tarea02]  (https://github.com/maluflorezg/Tareas_BioinfRepro2025_MLFG/blob/main/Unidad1/Sesion_2/Tarea_02_Martha_Florez.md)
+   [Tarea02](https://github.com/maluflorezg/Tareas_BioinfRepro2025_MLFG/blob/main/Unidad1/Sesion_2/Tarea_02_Martha_Florez.md)
    
    Sesion_03: Introducción a R con un enfoque bioinformático
    
