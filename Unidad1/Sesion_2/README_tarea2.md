@@ -1,3 +1,13 @@
+🌐 Session 2 – Git/GitHub and Documentation
+This session presents files related to version control exercises:
+
+Main assignment in Markdown [Tarea_02](https://github.com/maluflorezg/Tareas_BioinfRepro2025_MLFG/blob/main/Unidad1/Sesion_2/Tarea_02_Martha_Florez.md)
+
+Document with notes on common errors and solutions when cloning and managing repositories [Error_clonacion_repo](https://github.com/maluflorezg/Tareas_BioinfRepro2025_MLFG/blob/main/Unidad1/Sesion_2/Error_clonacion_repo.md)
+
+This session focused on teaching best practices for using Git/GitHub and resolving common problems when working with distributed repositories.
+
+
 # TAREA 2
 
 Este repositorio contiene evidencias de la realizción del ejercicio 2 de la **Sesión 2** , el cual como uno de los ejercicios nos pide clonar el repositorio de la clase. A continuación s e describen los pasos y pantallazos 
