@@ -27,7 +27,7 @@ Actualmente en [Tareas_BioinfRepro2025_MLFG](https://github.com/maluflorezg/Tare
 ---
 **Contenido**
 ---
-Unidad 1 - Introducción a la programación
+**UNIDAD 1 - INTRODUCCIÓN A LA PROGRAMACIÓN**
 
    Sesión_1: Mis Primeros Comandos
    
@@ -43,7 +43,7 @@ Unidad 1 - Introducción a la programación
 
 
 ---
-Unidad 2 - Genética de Poblaciones con Software Especializado
+**UNIDAD 2 - GENÉTICA DE POBLACIONES CON SOFTWARE ESPECIALIZADO**
 
    Sesion_1: Análisis de VCF y PLINK
 
@@ -59,7 +59,7 @@ Unidad 2 - Genética de Poblaciones con Software Especializado
    
 
 ---
-Unidad 3 - Generación y alineamiento de datos NGS
+**UNIDAD  3 - GENERACIÓN Y ALINEAMIENTO DE DATOS NGS**
 
    Sesion_1: Generación y QC de datos NGS
    
@@ -83,7 +83,7 @@ Unidad 3 - Generación y alineamiento de datos NGS
    
 
 ---
-Unidad 4 - Análisis de transcriptomas
+**UNIDAD  4 - ANÁLISIS DE TRANSCRIPTOMAS**
 
    Sesión_1: Expresión diferencial
    
