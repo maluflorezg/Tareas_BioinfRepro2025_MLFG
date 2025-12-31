@@ -1,99 +1,98 @@
-# Introducción a la Bioinformática y la Investigación Reproducible para el Análisis Genómico 👩🏻‍💻
+Introduction to Bioinformatics and Reproducible Research for Genomic Analysis 👩🏻‍💻
 ---
 [Tareas_BioinfRepro2025_MLFG](https://github.com/maluflorezg/Tareas_BioinfRepro2025_MLFG)
-Este es un repositorio del curso "Introducción a la bioinformática e investigación reproducible para análisis genéticos" II semestre 2025. 
-Se crea con el fin de darle seguimiento al curso, subiendo las tareas asignadas y actualizaciones. 
+This is a repository for the course "Introduction to Bioinformatics and Reproducible Research for Genetic Analysis," second semester 2025. It was created to track the course progress by uploading assigned tasks and updates.
 
-**Autora:** Martha Flórez Giraldo
+**Author:** Martha Flórez Giraldo
 
-**Magister en Genética - Universidad de Chile**
+**Master's in Genetics - University of Chile**
 
-**Correo:** mflorez@ug.uchile.cl
+**Email:** mflorez@ug.uchile.cl
 ---
 
-Actualmente en [Tareas_BioinfRepro2025_MLFG](https://github.com/maluflorezg/Tareas_BioinfRepro2025_MLFG) se encuentra:
+Currently, the following is located in [Tareas_BioinfRepro2025_MLFG](https://github.com/maluflorezg/Tareas_BioinfRepro2025_MLFG) se encuentra:
 
-1. 📁[BioinfinvRepro](https://github.com/maluflorezg/Tareas_BioinfRepro2025_MLFG/tree/main/BioinfinvRepro). El repositorio del cual se hace referencia el curso se encuentra en la carpeta. Es una clonación del curso [u-genoma/BioinfinvRepro](https://github.com/u-genoma/BioinfinvRepro.git).
-2. **Carpetas por Unidad**
+1. 📁[BioinfinvRepro](https://github.com/maluflorezg/Tareas_BioinfRepro2025_MLFG/tree/main/BioinfinvRepro). The repository referenced for the course is located in the folder. It is a clone of the u-genoma/BioinfinvRepro course [u-genoma/BioinfinvRepro](https://github.com/u-genoma/BioinfinvRepro.git).
+2. **Folders by Unit**
 
-   [Unidad1](https://github.com/maluflorezg/Tareas_BioinfRepro2025_MLFG/tree/main/Unidad1)
+   [Unit1](https://github.com/maluflorezg/Tareas_BioinfRepro2025_MLFG/tree/main/Unidad1)
    
-   [Unidad2](https://github.com/maluflorezg/Tareas_BioinfRepro2025_MLFG/tree/main/Unidad2)
+   [Unit2](https://github.com/maluflorezg/Tareas_BioinfRepro2025_MLFG/tree/main/Unidad2)
 
-   [Unidad3](https://github.com/maluflorezg/Tareas_BioinfRepro2025_MLFG/tree/main/Unidad3)
+   [Unit3](https://github.com/maluflorezg/Tareas_BioinfRepro2025_MLFG/tree/main/Unidad3)
    
-   [Unidad4](https://github.com/maluflorezg/Tareas_BioinfRepro2025_MLFG/tree/main/Unidad4)
+   [Unit4](https://github.com/maluflorezg/Tareas_BioinfRepro2025_MLFG/tree/main/Unidad4)
 
 ---
-**Contenido**
+**Contents**
 ---
-**UNIDAD 1 - INTRODUCCIÓN A LA PROGRAMACIÓN**
+**UNIT 1 - INTRODUCTION TO PROGRAMMING**
 
-   Sesión_1: Mis Primeros Comandos
+   Session 1: My First Commands
    
    [Tarea01](https://github.com/maluflorezg/Tareas_BioinfRepro2025_MLFG/blob/main/Unidad1/Sesion_1/Tarea01_Florez_Martha.pdf)
    
-   Sesion_2: Preparación y limpieza del Ambiente de Trabajo
+   Session 2: Preparing and Cleaning the Workspace
    
    [Tarea02](https://github.com/maluflorezg/Tareas_BioinfRepro2025_MLFG/blob/main/Unidad1/Sesion_2/Tarea_02_Martha_Florez.md)
    
-   Sesion_03: Introducción a R con un enfoque bioinformático
+   Session 3: Introduction to R with a Bioinformatics Approach
    
    [Tarea03](https://github.com/maluflorezg/Tareas_BioinfRepro2025_MLFG/blob/main/Unidad1/Sesion_3/Tarea_03_Martha_Florez.md)
 
 
 ---
-**UNIDAD 2 - GENÉTICA DE POBLACIONES CON SOFTWARE ESPECIALIZADO**
+**UNIT 2 - POPULATION GENETICS WITH SPECIALIZED SOFTWARE**
 
-   Sesion_1: Análisis de VCF y PLINK
+   Session 1: VCF and PLINK Analysis
 
    [Tarea04](https://github.com/maluflorezg/Tareas_BioinfRepro2025_MLFG/blob/main/Unidad2/Sesion1/Tarea_04_Martha_Florez.md)
    
-   Sesion_2: Análisis genético de poblaciones (Parte 1)
+   Session 2: Population Genetic Analysis (Part 1)
    
    [Tarea2.2](https://github.com/maluflorezg/Tareas_BioinfRepro2025_MLFG/blob/main/Unidad2/Sesion2/TAREA%202.2.md)
    
-   Sesion_03: Análisis genético de poblaciones (Parte 2)
+   Session 3: Population Genetic Analysis (Part 2)
    
    [Tarea2.3](https://github.com/maluflorezg/Tareas_BioinfRepro2025_MLFG/blob/main/Unidad2/Sesion3/TAREA%202.3.md)
    
 
 ---
-**UNIDAD  3 - GENERACIÓN Y ALINEAMIENTO DE DATOS NGS**
+**UNIT 3 - GENERATION AND ALIGNMENT OF NGS DATA**
 
-   Sesion_1: Generación y QC de datos NGS
+   Session 1: Generation and QC of NGS Data
    
    [Tarea 3.1](https://github.com/maluflorezg/Tareas_BioinfRepro2025_MLFG/blob/main/Unidad3/Sesion1/Tarea%203.1.md)
    
-   Sesion_2: Introducción a las bases de datos
+   Session 2: Introduction to Databases
    
    [Tarea 3.2](https://github.com/maluflorezg/Tareas_BioinfRepro2025_MLFG/blob/main/Unidad3/Sesion2/Tarea%203.2.md)
    
-   Sesion_03: Análisis de secuencias
+   Session 3: Sequence Analysis
    
    [Tarea 3.3](https://github.com/maluflorezg/Tareas_BioinfRepro2025_MLFG/blob/main/Unidad3/Sesion3/Tarea%203.3.md)
    
-   Sesion4: Análisis de ADN con CLC
+   Session 4: DNA Analysis with CLC
    
    [Tarea 3.4](https://github.com/maluflorezg/Tareas_BioinfRepro2025_MLFG/blob/main/Unidad3/Sesion4/Tarea%203.4_Analisis_de_Variantes.md)
    
-   Sesion_5: Genómica del cáncer
+   Session 5: Cancer Genomics
    
    [Tarea 3.5](https://github.com/maluflorezg/Tareas_BioinfRepro2025_MLFG/blob/main/Unidad3/Sesion5/Tarea%203.5%20%E2%80%93%20An%C3%A1lisis%20Germinal%20y%20Som%C3%A1tico%20con%20nf-core%3Asarek.md)
    
 
 ---
-**UNIDAD  4 - ANÁLISIS DE TRANSCRIPTOMAS**
+**UNIT 4 - TRANSCRIPTOME ANALYSIS**
 
-   Sesión_1: Expresión diferencial
+   Session 1: Differential Expression
    
    [Tarea_4.1](https://github.com/maluflorezg/Tareas_BioinfRepro2025_MLFG/blob/main/Unidad4/Sesion1/Tarea_4.1-An%C3%A1lisis_de_expresi%C3%B3n_diferencial_en_R.md)
    
-   Sesion_2: Análisis funcional
+   Session 2: Functional Analysis
    
    [Tarea_4.2](https://github.com/maluflorezg/Tareas_BioinfRepro2025_MLFG/blob/main/Unidad4/Sesion2/Tarea_4.2_Analisis_clustering.md)
    
-   Sesion_03: RNA-seq
+   Session 3: RNA Sequencing
    
    [Tarea_4.3](https://github.com/maluflorezg/Tareas_BioinfRepro2025_MLFG/blob/main/Unidad4/Sesion3/Tarea_4.3_Analisis_Expresion_Diferencial.md)
    
