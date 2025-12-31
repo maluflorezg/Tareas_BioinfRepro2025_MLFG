@@ -22,7 +22,7 @@ Upon completion of this unit, students are expected to be able to:
 
 ## Session Content Description
 
-### 🧬 Session 1 – Genetic Data
+### 🧬 Session 1 – Genetic Data [README.md](https://github.com/maluflorezg/Tareas_BioinfRepro2025_MLFG/blob/main/Unidad2/Sesion1/README.md)
 
 This session covers the most common concepts and input formats in population genetics. It explores:
 
@@ -34,7 +34,7 @@ The main focus is preparing the data for subsequent analyses and understanding h
 
 --
 
-### 📐 Session 2 – Exploratory Genetic Analysis
+### 📐 Session 2 – Exploratory Genetic Analysis [README.md](https://github.com/maluflorezg/Tareas_BioinfRepro2025_MLFG/blob/main/Unidad2/Sesion2/README.md)
 
 This session covers basic methods for understanding genetic variation among individuals and populations, including:
 
@@ -48,7 +48,7 @@ Students implement these analyses using specialized packages and document their 
 
 ---
 
-### 🔬 Session 3 – Population Structure Statistics and Models
+### 🔬 Session 3 – Population Structure Statistics and Models [README.md](https://github.com/maluflorezg/Tareas_BioinfRepro2025_MLFG/blob/main/Unidad2/Sesion3/README.md)
 
 The final session focuses on more advanced methods for evaluating genetic structure, such as:
 
