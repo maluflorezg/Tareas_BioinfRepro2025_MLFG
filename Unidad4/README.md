@@ -16,13 +16,10 @@ Unit 4 covers gene expression data analysis, integrating different steps of the 
 ## Unit Organization
 The unit is organized into work sessions and cross-cutting folders:
 
-- `Session 1/`: Introduction and initial tutorials on expression analysis.
+- `Sesion_1`: Introduction and initial tutorials on expression analysis. [README](https://github.com/maluflorezg/Tareas_BioinfRepro2025_MLFG/blob/main/Unidad4/Sesion1/README.md)
 
-- `Session 2/`: Intermediate data processing and analysis.
+- `Sesion_2`: Intermediate data processing and analysis. [README](https://github.com/maluflorezg/Tareas_BioinfRepro2025_MLFG/blob/main/Unidad4/Sesion2/README.md)
 
-- `Session 3/`: Analysis and visualization of results.
-- `qc/`: Data quality control results.
-
-- `filtered/`: Filtered or processed data used in subsequent analyses.
-
+- `Sesion_3`: Analysis and visualization of results. [README](https://github.com/maluflorezg/Tareas_BioinfRepro2025_MLFG/blob/main/Unidad4/Sesion3/README.md)
+  
 Each session has its own folder and associated documentation.
