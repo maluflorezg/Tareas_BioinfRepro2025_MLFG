@@ -33,15 +33,15 @@ This unit is divided into several sessions, each focused on a particular aspect 
 
 - Advanced sessions: Implementation and understanding of complete bioinformatics pipelines, such as Sarek, for reproducible variant analysis.
 
-    - Session 1: NGS reading quality control
+    - Session 1: NGS reading quality control [README](https://github.com/maluflorezg/Tareas_BioinfRepro2025_MLFG/blob/main/Unidad3/Sesion1/README.md)
 
-    - Session 2: cBioPortal for analyzing genomic cancer data
+    - Session 2: cBioPortal for analyzing genomic cancer data [README](https://github.com/maluflorezg/Tareas_BioinfRepro2025_MLFG/blob/main/Unidad3/Sesion2/README.md)
 
-    - Session 3: Sequence Analysis
+    - Session 3: Sequence Analysis [README](https://github.com/maluflorezg/Tareas_BioinfRepro2025_MLFG/blob/main/Unidad3/Sesion3/README.md)
 
-    - Session 4: Variant Analysis with CLC Genomics Workbench
+    - Session 4: Variant Analysis with CLC Genomics Workbench [README](https://github.com/maluflorezg/Tareas_BioinfRepro2025_MLFG/blob/main/Unidad3/Sesion4/README.md)
 
-    - Session 5: Germinal and Somatic Analysis with nf-core/sarek
+    - Session 5: Germinal and Somatic Analysis with nf-core/sarek [README](https://github.com/maluflorezg/Tareas_BioinfRepro2025_MLFG/blob/main/Unidad3/Sesion5/README.md)
 ---
 
 ## Work Organization
