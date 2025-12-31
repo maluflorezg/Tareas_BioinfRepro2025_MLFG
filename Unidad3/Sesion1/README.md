@@ -29,6 +29,8 @@ This session introduces the basic concepts related to DNA sequencing data analys
 ## Files in this Session
 In this folder you will find:
 
-[S7_R1](https://github.com/maluflorezg/Tareas_BioinfRepro2025_MLFG/tree/main/Unidad3/Sesion1/S7_R1): Contains the first-end reads (read 1) of each fragment.
-[S7_R2](https://github.com/maluflorezg/Tareas_BioinfRepro2025_MLFG/tree/main/Unidad3/Sesion1/S7_R2): contains the second-end reads (read 2) of each fragment.
-[Tarea 3.1.md](https://github.com/maluflorezg/Tareas_BioinfRepro2025_MLFG/blob/main/Unidad3/Sesion1/Tarea%203.1.md)
+- [S7_R1](https://github.com/maluflorezg/Tareas_BioinfRepro2025_MLFG/tree/main/Unidad3/Sesion1/S7_R1): Contains the first-end reads (read 1) of each fragment.
+
+- [S7_R2](https://github.com/maluflorezg/Tareas_BioinfRepro2025_MLFG/tree/main/Unidad3/Sesion1/S7_R2): contains the second-end reads (read 2) of each fragment.
+
+- [Tarea 3.1.md](https://github.com/maluflorezg/Tareas_BioinfRepro2025_MLFG/blob/main/Unidad3/Sesion1/Tarea%203.1.md)
