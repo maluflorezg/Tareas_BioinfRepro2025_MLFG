@@ -5,7 +5,9 @@ Este es un repositorio del curso "Introducción a la bioinformática e investiga
 Se crea con el fin de darle seguimiento al curso, subiendo las tareas asignadas y actualizaciones. 
 
 **Autora:** Martha Flórez Giraldo
+
 **Magister en Genética - Universidad de Chile**
+
 **Correo:** mflorez@ug.uchile.cl
 ---
 
@@ -33,13 +35,11 @@ Unidad 1 - Introducción a la programación
    
    Sesion_2: Preparación y limpieza del Ambiente de Trabajo
    
-   [Tarea02]
-   (https://github.com/maluflorezg/Tareas_BioinfRepro2025_MLFG/blob/main/Unidad1/Sesion_2/Tarea_02_Martha_Florez.md)
+   [Tarea02]  (https://github.com/maluflorezg/Tareas_BioinfRepro2025_MLFG/blob/main/Unidad1/Sesion_2/Tarea_02_Martha_Florez.md)
    
    Sesion_03: Introducción a R con un enfoque bioinformático
    
-   [Tarea03]
-(https://github.com/maluflorezg/Tareas_BioinfRepro2025_MLFG/blob/main/Unidad1/Sesion_3/Tarea_03_Martha_Florez.md)
+   [Tarea03](https://github.com/maluflorezg/Tareas_BioinfRepro2025_MLFG/blob/main/Unidad1/Sesion_3/Tarea_03_Martha_Florez.md)
 
 
 ---
@@ -47,13 +47,11 @@ Unidad 2 - Genética de Poblaciones con Software Especializado
 
    Sesion_1: Análisis de VCF y PLINK
 
-   [Tarea04]
-   (https://github.com/maluflorezg/Tareas_BioinfRepro2025_MLFG/blob/main/Unidad2/Sesion1/Tarea_04_Martha_Florez.md)
+   [Tarea04](https://github.com/maluflorezg/Tareas_BioinfRepro2025_MLFG/blob/main/Unidad2/Sesion1/Tarea_04_Martha_Florez.md)
    
    Sesion_2: Análisis genético de poblaciones (Parte 1)
    
-   [Tarea2.2]
-   (https://github.com/maluflorezg/Tareas_BioinfRepro2025_MLFG/blob/main/Unidad2/Sesion2/TAREA%202.2.md)
+   [Tarea2.2](https://github.com/maluflorezg/Tareas_BioinfRepro2025_MLFG/blob/main/Unidad2/Sesion2/TAREA%202.2.md)
    
    Sesion_03: Análisis genético de poblaciones (Parte 2)
    
