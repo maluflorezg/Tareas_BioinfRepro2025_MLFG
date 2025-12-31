@@ -40,12 +40,12 @@ During this session, we will review and use tools and packages that allow you to
 
 ## Files in this Session
 
-- `[README.md]`(https://github.com/maluflorezg/Tareas_BioinfRepro2025_MLFG/blob/main/Unidad2/Sesion1/Tarea_04_Martha_Florez.md): Session overview and objectives.
+- [README.md](https://github.com/maluflorezg/Tareas_BioinfRepro2025_MLFG/blob/main/Unidad2/Sesion1/Tarea_04_Martha_Florez.md): Session overview and objectives.
 
-- `[code]`(https://github.com/maluflorezg/Tareas_BioinfRepro2025_MLFG/tree/main/Unidad2/Sesion1/code): Scripts and code used for the analyses.
+- [code](https://github.com/maluflorezg/Tareas_BioinfRepro2025_MLFG/tree/main/Unidad2/Sesion1/code): Scripts and code used for the analyses.
 
-- `[data]`(https://github.com/maluflorezg/Tareas_BioinfRepro2025_MLFG/tree/main/Unidad2/Sesion1/data): Genetic data inputs and files.
+- [data](https://github.com/maluflorezg/Tareas_BioinfRepro2025_MLFG/tree/main/Unidad2/Sesion1/data): Genetic data inputs and files.
 
-- `[results]`(https://github.com/maluflorezg/Tareas_BioinfRepro2025_MLFG/tree/main/Unidad2/Sesion1/results): Analysis outputs (tables, figures).
+- [results](https://github.com/maluflorezg/Tareas_BioinfRepro2025_MLFG/tree/main/Unidad2/Sesion1/results): Analysis outputs (tables, figures).
 
-- `[Figures]`(https://github.com/maluflorezg/Tareas_BioinfRepro2025_MLFG/tree/main/Unidad2/Sesion1/Figure): Generated graphs and visual representations.
+- [Figures](https://github.com/maluflorezg/Tareas_BioinfRepro2025_MLFG/tree/main/Unidad2/Sesion1/Figure): Generated graphs and visual representations.
