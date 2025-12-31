@@ -25,7 +25,7 @@ This first unit covers the fundamental concepts of reproducible bioinformatics a
 This unit is divided into three sessions that include exercises, assignments, and documentation, organized as follows:
 
 ### 🧪 Session 1 – Introduction / First Exercises
-
+[README](https://github.com/maluflorezg/Tareas_BioinfRepro2025_MLFG/blob/main/Unidad1/Sesion_1/README.md)
 This session contains:
 - Text file with samples (`names_of_samples.txt`).
 
@@ -38,7 +38,7 @@ The purpose of this session was to introduce file handling and basic R practice,
 - ---
 
 ### 🌐 Session 2 – Git/GitHub and Documentation
-
+[README](https://github.com/maluflorezg/Tareas_BioinfRepro2025_MLFG/blob/main/Unidad1/Sesion_2/README_tarea2.md)
 This session presents files related to version control exercises:
 - Main assignment in Markdown.
 
@@ -49,7 +49,7 @@ This session focused on teaching best practices for using Git/GitHub and resolvi
 ---
 
 ### 📊 Session 3 – Introduction to R with a Bioinformatics Focus
-
+[README](https://github.com/maluflorezg/Tareas_BioinfRepro2025_MLFG/blob/main/Unidad1/Sesion_3/README.md)
 This session includes:
 - Development of Task 03 in Markdown format with R exercises.
 
