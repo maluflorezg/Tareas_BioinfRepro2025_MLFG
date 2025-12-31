@@ -68,15 +68,15 @@ Within this unit, the content of each session is organized into folders containi
 
 - `README.md`: session overview and objectives.
 
-- `code/`: scripts and code used for the analyses.
+- `code`: scripts and code used for the analyses.
 
-- `data/`: genetic data inputs and files.
+- `data`: genetic data inputs and files.
 
-- `results/`: Outputs from the analyses (tables, figures).
+- `results`: Outputs from the analyses (tables, figures).
 
-- `figures/`: Generated graphs and visual representations.
+- `figures`: Generated graphs and visual representations.
 
-- `docs/`: PDF documents or other files accompanying the tasks.
+- `docs`: PDF documents or other files accompanying the tasks.
 
 ---
 
@@ -84,11 +84,11 @@ Within this unit, the content of each session is organized into folders containi
 
 1. **Read the README** for each session to understand the objectives and structure.
 
-2. **Run the scripts** in `code/` using the data in `data/`.
+2. **Run the scripts** in `code` using the data in `data`.
 
-3. **Explore the results** in `results/` and `figures/`.
+3. **Explore the results** in `results` and `figures`.
 
-4. **Review the documentation** in `docs/` for additional references.
+4. **Review the documentation** in `docs` for additional references.
 
 Documenting your steps and conclusions in Markdown ensures reproducibility and clarity, both for assessment and for future reference.
 
