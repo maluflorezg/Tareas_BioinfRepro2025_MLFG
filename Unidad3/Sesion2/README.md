@@ -29,4 +29,4 @@ In this folder you will find:
 
 - [Figures](https://github.com/maluflorezg/Tareas_BioinfRepro2025_MLFG/tree/main/Unidad3/Sesion2/Figures): Generated graphs and visual representations.
 
-- [Tarea 3.2.md](Tarea 3.2.md): Discussion of quality control results.
+- [Tarea 3.2.md](https://github.com/maluflorezg/Tareas_BioinfRepro2025_MLFG/blob/main/Unidad3/Sesion2/Tarea%203.2.md): Discussion of quality control results.
