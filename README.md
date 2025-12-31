@@ -5,9 +5,7 @@ Este es un repositorio del curso "Introducción a la bioinformática e investiga
 Se crea con el fin de darle seguimiento al curso, subiendo las tareas asignadas y actualizaciones. 
 
 **Autora:** Martha Flórez Giraldo
-
 **Magister en Genética - Universidad de Chile**
-
 **Correo:** mflorez@ug.uchile.cl
 ---
 
