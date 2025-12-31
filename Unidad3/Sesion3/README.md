@@ -31,7 +31,5 @@ In this folder you will find:
 
 [Figuras](https://github.com/maluflorezg/Tareas_BioinfRepro2025_MLFG/tree/main/Unidad3/Sesion3/Figuras): Generated graphs and visual representations.
 
-[Tarea 3.3.md](https://github.com/maluflorezg/Tareas_BioinfRepro2025_MLFG/blob/main/Unidad3/Sesion3/Tarea%203.3.md): Discussion of quality control results.
-
-
+[Tarea 3.3.md](https://github.com/maluflorezg/Tareas_BioinfRepro2025_MLFG/blob/main/Unidad3/Sesion3/Tarea%203.3.md)
 - Post-preprocessing evaluation.
