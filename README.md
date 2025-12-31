@@ -13,7 +13,12 @@ This is a repository for the course "Introduction to Bioinformatics and Reproduc
 Currently, the following is located in [Tareas_BioinfRepro2025_MLFG](https://github.com/maluflorezg/Tareas_BioinfRepro2025_MLFG) se encuentra:
 
 1. 📁[BioinfinvRepro](https://github.com/maluflorezg/Tareas_BioinfRepro2025_MLFG/tree/main/BioinfinvRepro). The repository referenced for the course is located in the folder. It is a clone of the u-genoma/BioinfinvRepro course [u-genoma/BioinfinvRepro](https://github.com/u-genoma/BioinfinvRepro.git).
+   
 2. **Folders by Unit**
+Repository Structure
+- `UnitX/`: deliverables organized by unit and session.
+- `docs/`: general documents (notes, requirements).
+- `resources/`: core course materials or reusable resources.
 
    [Unit1](https://github.com/maluflorezg/Tareas_BioinfRepro2025_MLFG/tree/main/Unidad1)
    
