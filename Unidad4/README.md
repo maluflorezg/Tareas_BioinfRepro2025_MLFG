@@ -1,57 +1,28 @@
-# Unit 4 – Gene Expression Analysis (RNA-seq)
+# Unit 4 – Gene Expression Analysis
 
 ## Introduction
+Unit 4 covers gene expression data analysis, integrating different steps of the bioinformatics workflow necessary to prepare, evaluate, and analyze experimental data. This unit combines computational tools and analysis in R to work with expression data, emphasizing the correct organization and documentation of the analysis.
 
-Unit 4 covers **gene expression analysis using RNA sequencing data (RNA-seq)**. This unit integrates bioinformatics and statistical concepts to transform raw RNA-seq reads into interpretable results on gene expression. The goal is for students to understand the complete stages of the RNA-seq workflow, from read quality control to differential expression analysis and the biological interpretation of the results.
+## Objectives
+- Understand the general workflow of gene expression analysis.
 
-Reproducibility, analysis organization, and proper documentation are a cross-cutting focus of this unit, as in previous units of the course.
+- Organize and process input data reproducibly.
 
---
+- Evaluate data quality before analysis.
 
-## Unit Objectives
-
-By the end of this unit, students are expected to be able to:
-
-- Understand the general stages of RNA-seq analysis.
-
-- Evaluate the quality and preprocess RNA sequencing data.
-
-- - Obtain expression matrices ready for statistical analysis.
-
-- Apply differential expression analysis methods.
-
-- Interpret and communicate results clearly and reproducibly.
-
----
+- Apply statistical and exploratory analyses in R.
+- Maintain a clear folder structure for inputs, scripts, and results.
 
 ## Unit Organization
+The unit is organized into work sessions and cross-cutting folders:
 
-This unit is divided into sessions. In each session you will find:
+- `Session 1/`: Introduction and initial tutorials on expression analysis.
 
-- `README.md`: session description and guide.
+- `Session 2/`: Intermediate data processing and analysis.
 
-- `data`: input files.
+- `Session 3/`: Analysis and visualization of results.
+- `qc/`: Data quality control results.
 
-- `code`: scripts or notebooks with analyses.
+- `filtered/`: Filtered or processed data used in subsequent analyses.
 
-- `results`: analysis outputs (tables, metrics).
-
-- `figures`: generated graphs.
-
-- `docs`: supplementary documents (if applicable).
-
-The sessions are designed to progressively cover the entire workflow of an ANN-seq analysis.
-
----
-
-## Session Content
-
-- **Session 1** – Introduction to ANN-seq analysis and environment setup.
-
-- **Session 2** – Quality control of RNA-seq reads.
-
-- **Session 3** – Read preprocessing and cleanup.
-
-- **Session 4** – Quantification and preparation of expression data.
-
-- **Session 5** – Differential gene expression analysis.
+Each session has its own folder and associated documentation.
